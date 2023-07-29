@@ -1,0 +1,43 @@
+/* Base */
+
+@import "base/fonts";
+@import "base/variables";
+@import "base/custom";
+// @import 'base/typography';
+@import "base/utils";
+
+/* Components */
+
+@import "components/header";
+@import "components/accordion";
+@import "components/banners";
+@import "components/boxes";
+@import "components/menu";
+@import "components/list";
+@import "components/footer";
+@import "components/table";
+// @import "components/carousel";
+@import "components/calendars";
+@import "components/form";
+@import "components/button";
+@import "components/contraste";
+@import "components/tabs";
+@import "components/timeline";
+@import "components/stories";
+@import "components/home";
+@import "components/carrosel";
+@import "components/swiper";
+@import "components/products";
+@import "components/pnb";
+@import "components/header-quem-somos";
+@import "components/cursos";
+@import "components/plugin";
+@import "components/contato";
+
+
+
+/* Pages */
+
+@import "pages/error";
+@import "pages/home";
+@import "pages/internal";

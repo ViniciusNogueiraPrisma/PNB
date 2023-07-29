@@ -1,0 +1,202 @@
+.table {
+    margin: 0;
+
+    thead {
+        tr {
+            background-color: var(--primary-01-default) !important;
+
+            th {
+                color: var(--text-white);
+                padding: 12px 8px;
+                font-size: rem(16);
+                font-weight: 400;
+                vertical-align: middle;
+                border-bottom: 0px;
+
+                @media (max-width: 991px){
+                    min-width: 150px;
+                }
+            }
+        }
+    }
+
+    tbody {
+        border-top: none !important;
+
+        tr {
+            &:nth-child(even){
+                background-color: var(--grey-scale-01);
+            }
+
+            &.bg-gray-200{
+                background-color: var(--grey-scale-02);
+            }
+
+            td {
+                border: none;
+                color: var(--text-color);
+                font-size: rem(16);
+                vertical-align: middle;
+                padding: 12px 8px;
+
+                a{
+                    text-decoration: none;
+                    white-space: nowrap;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+
+                img{
+                    margin: 0 auto;
+                    width: 28px;
+                    max-width: 28px;
+                }
+
+                &.not-active{
+                    a{
+                        cursor: default;
+                    }
+                    img{
+                        opacity: .4;
+                    }
+                }
+
+            }
+        }
+    }
+
+    &.table-resultados{
+        tr{
+            td,th{
+                &:not(:first-child){
+                    text-align: center;
+                    margin: 0 auto;
+
+                    
+                }
+
+                &:first-child{
+                    @media (max-width: 475px){
+                        max-width: 150px;
+                    }
+                }
+
+                img{
+                    width: 24px;
+                    max-width: 24px;
+
+                    filter: brightness(0) invert(16%) sepia(58%) saturate(7416%) hue-rotate(16deg) brightness(91%) contrast(90%);
+                }
+
+                &.disabled{
+                    a{
+                        cursor: default;
+                    }
+                    img{
+                        opacity: 0.4;
+                    }
+                }
+
+                a{
+                    display: inline-block;
+                }
+            }
+
+            td{
+                &:not(:first-child){
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+            
+    }
+}
+
+.table-responsive{
+    margin-bottom: 24px;
+}
+
+.table-accordion-adm {
+    tbody {
+        tr {
+
+            &:nth-child(odd) {
+                cursor: pointer;
+            }
+            td {
+               
+                &:first-child {
+
+                    img{
+                        transition: .3s;
+                    }
+                }
+
+                p{
+                    font-size: rem(14);
+                }
+            }
+
+            &.accordion-collapse {
+                td {
+                    text-align: left;
+                    white-space: normal;
+                    padding: 16px 16px 16px 16px;
+                }
+
+                &.show{
+                    background-color: var(--grey-scale-01);
+                }
+            }
+
+            &:not(.collapsed){
+                td {
+                    img{
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+
+            &.clickable{
+                &:not(.collapsed){
+                    background-color: var(--grey-scale-01);
+                }
+            }
+        }
+    }
+}
+
+.table-responsive{
+    margin-bottom: 40px;
+
+    table{
+      @media (max-width: 767px){
+        width: 600px;
+      }
+    }
+
+    .table-downloads{
+        @media (max-width: 767px){
+            width: 600px;
+        }
+    }
+
+    &.border-right {
+		box-shadow: inset -20px 0px 10px -20px #aaa ;
+	}
+
+	&.border-left {
+		box-shadow: inset 20px 0px 10px -20px #aaa ;
+	}
+
+    &.border-right-left{
+        box-shadow: inset 20px 0px 10px -20px #aaa, inset -20px 0px 10px -20px #aaa;
+    }
+}
+  

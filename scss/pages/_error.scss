@@ -1,0 +1,69 @@
+#erro{
+    width: 100%;
+    background: url('../images/bg-page-erro.jpg') no-repeat center;
+    background-size: cover;
+    padding: 0;
+
+    .container{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flex-error{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .text404{
+        color: var(--text-primary-01-default);
+        font-size: rem(42);
+        margin-bottom: 0;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    h1{
+        color: var(--text-primary-01-default);
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: rem(38);
+        font-weight: 600;
+
+        @media (max-width: 767px){
+            font-size: rem(24px);
+        }
+    }
+
+    h3{
+        padding-top: 16px;
+        color: var(--text-color);
+        font-weight: 400;
+        font-size: rem(22);
+        margin-bottom:0;
+        text-align: center;
+
+        @media (max-width: 767px){
+            font-size: rem(18px);
+        }
+    }
+
+    p{
+        margin-top: 0;
+        color: var(--text-small);
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .erro-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+}
+

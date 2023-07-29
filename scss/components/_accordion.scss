@@ -1,0 +1,90 @@
+.accordion{
+    margin: 24px 0 32px;
+
+    .accordion-item{
+        border: none !important;
+        border-radius: 0px;
+        font-weight: 600;
+    }
+
+    .accordion-header{
+        line-height: normal;
+
+
+        button{
+            padding: 20px 48px 20px 16px;
+            font-size: rem(22);
+            color: var(--text-grey-scale-06);
+            background-color: var(--pure-white);
+            border: none !important;
+            box-shadow: none !important;
+            font-weight: 400 ;
+            flex-wrap: wrap;
+            border-radius: 2px !important;
+            font-family: var(--font-text-1);
+            outline: none !important;
+            transition: .3s ease-in-out;
+
+
+            &::after{
+                content: "";
+                height: 16px;
+                width: 16px;
+                filter: brightness(0 ) invert(71%) sepia(0%) saturate(1034%) hue-rotate(156deg) brightness(90%) contrast(96%);
+                background: url("../images/icons/icon-plus.svg") no-repeat center;
+                background-size: cover;
+                font-family: var(--font-icomoon);
+                position: absolute;
+                right: 0px;
+                font-size: rem(20);
+                color: var(--text-white);
+                transition: .3s ease;
+                font-weight: 400;
+                right: 16px;
+                display: block;
+            }
+
+            &:not(.collapsed){
+                &::after{
+                    filter: brightness(0) invert(100%) sepia(0%) saturate(2724%) hue-rotate(306deg) brightness(119%) contrast(103%);
+                    transform: rotate(45deg);
+                }
+                
+                color: var(--text-white);
+                background-color: var(--primary-01-default);
+                font-weight: 600 ;
+
+            }
+
+            &.collapsed:hover{
+                background-color: var(--grey-scale-02);
+                color: var(--text-primary-01-var-1);
+
+                &::after{
+                    content: "";
+                    filter: brightness(0) invert(29%) sepia(27%) saturate(6809%) hue-rotate(357deg) brightness(92%) contrast(89%);
+                }
+            }
+            
+        }
+    }
+
+    .accordion-collapse{
+        border: none !important;
+        box-shadow: none !important;
+        .accordion-body{
+            padding: 24px 16px 24px 16px;
+
+            .list-downloads{
+                margin-top: -24px;
+                margin-bottom: -24px;
+            }
+
+            p{
+                color: var(--text-color);
+            }
+        }
+
+    }
+
+}

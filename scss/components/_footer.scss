@@ -1,0 +1,336 @@
+footer {
+  background-color: #002e5f;
+  //   height: 400px;
+}
+
+.content-image-footer {
+  margin-top: -120px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.card-footer-content {
+  width: 100%;
+  height: 300px;
+  display: grid;
+  border-radius: 8px;
+
+  padding: 40px 24px 40px 24px;
+}
+
+.one {
+  background-image: url("../../images/new-images/Home/bg-footer-1.png");
+}
+
+.two {
+  background-image: url("https://template.riweb.com.br/TC-ri/thumb/thumb-projeto.jpg");
+}
+
+.three {
+  background-image: url("../../images/new-images/Home/bg-footer-3.png");
+}
+
+.one p {
+  color: #fafafa;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+}
+
+.one h1 {
+  color: white;
+  font-size: 28px;
+  font-family: "PT Serif";
+  font-weight: 700;
+  line-height: 36.96px;
+  word-wrap: break-word;
+  margin-top: -25px;
+}
+
+.one span {
+  color: #fafafa;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 22.4px;
+  word-wrap: break-word;
+  margin-top: 0px;
+}
+
+.one button {
+  border-radius: 4px;
+  padding: 8px 16px 8px 16px;
+  width: 135px;
+  height: 38px;
+  align-items: center;
+  display: flex;
+
+  color: #002e5f;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+  margin-top: 34px;
+}
+
+.two p {
+  // Aplicativo
+  color: #fafafa;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.two h1 {
+  // Invista com a TC
+  color: #99ff00;
+  font-size: 28px;
+  font-family: "PT Serif";
+  font-weight: 700;
+  line-height: 36.96px;
+  word-wrap: break-word;
+
+  margin-top: -35px;
+}
+
+.two h3 {
+  // Já é cliente?
+  color: #eeeeee;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.two a {
+  color: #eeeeee;
+}
+
+.two span {
+  // Baixei o aplicativo da TC:
+  color: #dddddd;
+  font-size: 12px;
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 15.84px;
+  word-wrap: break-word;
+}
+
+.three p {
+  // Canal Youtube
+  color: #999999;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.three h1 {
+  // Day Trade  - Ao Vivo
+  color: white;
+  font-size: 28px;
+  font-family: "PT Serif";
+  font-weight: 700;
+  line-height: 36.96px;
+  word-wrap: break-word;
+
+  margin-top: -25px;
+}
+
+.three span {
+  // Ao vivo das 8h às 17h.
+  color: white;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.three a {
+  color: #dddddd;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.three button {
+  background-color: #ff0000;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  width: 194px;
+  height: 38px;
+  color: white;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+
+  padding: 8px 16px 8px 16px;
+
+  margin-top: 30px;
+}
+
+.container-footer {
+  margin-left: 64px;
+  margin-right: 64px;
+}
+
+.content-footer {
+  //   border: 1px solid yellow;
+  margin-top: 112px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 12px;
+}
+
+// .logo-footer {
+//   border: 1px solid red;
+// }
+
+.links-footer {
+  margin-top: 100px;
+}
+
+.links-footer a {
+  text-decoration: none;
+}
+
+.links-footer span {
+  color: #fafafa;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.footer-icons {
+  margin-top: 32px;
+}
+
+.last-footer {
+  margin-left: 16px;
+  padding-left: 16px;
+  border-left: 1px solid gray;
+}
+
+.sobre-footer {
+  display: flex;
+  gap: 52px;
+}
+
+.sobre-footer span a {
+  text-decoration: none;
+  margin-top: 16px;
+
+  color: #fafafa;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.first-span-footer {
+  // Investment Banking
+  color: #fafafa;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.sobre-pnb-footer {
+  display: grid;
+}
+
+.nossos-pnb {
+  display: grid;
+}
+
+.invest-pnb {
+  display: grid;
+}
+
+.news-footer h1 {
+  color: #fafafa;
+  font-size: 21px;
+  font-family: "PT Serif";
+  font-weight: 700;
+  line-height: 29.4px;
+  word-wrap: break-word;
+}
+
+.news-footer p {
+  // Inscreva-se para receber nossas novidades e atualizações sobre cursos
+  color: #bbbbbb;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+  margin-bottom: 30px;
+}
+
+.news-footer span {
+  // E-mail:
+  color: #999999;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+}
+
+.news-footer input {
+  width: 364px;
+  padding: 10px 16px 10px 16px;
+  border-radius: 4px;
+  border: none;
+  //   margin-top: 5px;
+  //   margin-bottom: ;
+}
+
+.news-footer button {
+  // Cadastrar
+  color: #222222;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 10px 16px 10px 16px;
+  border-radius: 4px;
+  background: #fff;
+  border: none;
+}
+
+.news-buttons {
+  align-items: center;
+  display: flex;
+  gap: 15px;
+}

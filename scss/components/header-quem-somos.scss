@@ -1,0 +1,453 @@
+.header-qs {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-qs {
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+
+  padding-left: 222px;
+  padding-right: 222px;
+}
+
+.header-acessibilidade {
+  background-color: black;
+  display: flex;
+  justify-content: end;
+  padding-right: 72px;
+
+  height: 32px;
+  align-items: center;
+}
+
+.header-tools {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 32px;
+}
+
+.header-tools span {
+  // Acessibilidade
+  color: #eeeeee;
+  font-size: 12px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 15.84px;
+  word-wrap: break-word;
+}
+
+.header-language {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header-language a {
+  text-decoration: none;
+}
+
+.header-language span {
+  // EN
+  color: white;
+  font-size: 12px;
+  font-family: "Roboto";
+  font-weight: 400;
+  text-decoration: underline;
+  line-height: 15.84px;
+  word-wrap: break-word;
+}
+
+.banner-qs {
+  padding: 0;
+}
+
+.img-banner-qs img {
+  width: 100%;
+  height: 65.015479876161vh;
+  background-size: cover;
+  filter: brightness(40%);
+}
+
+.infos-banner-qs {
+  position: absolute;
+  margin-top: -39.99896157840083vh;
+}
+
+.container-banner-qs {
+  display: flex;
+  justify-content: center;
+}
+
+.infos-banner-qs h4 {
+  // Sobre o PNB
+  color: #fafafa;
+  font-size: 40px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 44px;
+  word-wrap: break-word;
+  margin-bottom: 50px;
+}
+
+.pag-banner-qs {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.pag-banner-qs a {
+  text-decoration: none;
+}
+
+.pag-banner-qs span {
+  // Sobre o PNB
+  color: #eeeeee;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.content-qs {
+  background-color: #fff;
+  height: 666px;
+}
+
+.img-txt-qs {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: end;
+}
+
+.img-txt-qs img {
+  // width: 61vh;
+  // height: 57vh;
+  margin-top: -0px;
+  position: absolute;
+}
+
+.txt-qs h3 {
+  // Conteúdo de valor para melhorar<br/>a sua estratégia Operacional
+  color: #002e5f;
+  font-size: 34px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 44.88px;
+  word-wrap: break-word;
+}
+
+.txt-qs span {
+  // Comunidade, formada pelo analista técnico Wilson Neto, para quem opera DAY TRADE no Mercado de Renda Variável utilizando a técnica de Leitura de Fluxo.
+  color: #666666;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.txt-qs p {
+  // A GESTÃO DE RISCO é um dos nossos principais pilares operacionais.
+  color: #0160a6;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.container-infos-qs {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.txt-qs {
+  width: 55vh;
+  margin-top: 10vh;
+}
+
+.card-img-qs {
+  z-index: 1;
+}
+
+.card-img-qs img {
+  margin-left: 10.319917440660475vh;
+  height: 615px;
+}
+
+.main-container-qs {
+  // background-color: #ebebeb;
+  background-color: #fafafa;
+  margin-top: 13px;
+}
+
+.content-conheca-pnb {
+  padding: 80px 72px 80px 72px;
+}
+
+.conheca-pnb {
+  display: flex;
+  gap: 150px;
+  margin-top: 80px;
+  justify-content: space-between;
+}
+
+.conheca-pnb h1 {
+  // Conheça o time
+  color: #002e5f;
+  font-size: 40px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 44px;
+  word-wrap: break-word;
+}
+
+.conheca-pnb h1 span {
+  // da PNB
+  color: #002e5f;
+  font-size: 40px;
+  font-family: "PT Serif";
+  font-weight: 700;
+  line-height: 44px;
+  word-wrap: break-word;
+}
+
+.others-txt-pnb {
+  width: 50%;
+}
+
+.others-txt-pnb span {
+  // Lorem ipsum dolor sit amet consectetur. Sit aliquet nibh consectetur sociis turpis et. Donec feugiat consectetur iaculis pellentesque odio semper ut feugiat. Cursus urna enim lectus.
+  color: #666666;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.others-txt-pnb h4 {
+  // Lorem ipsum dolor sit amet consectetur. Libero porttitor quis lorem lacus. Lectus ornare dui lacus diam eu mi sit. Iaculis.
+  color: #0160a6;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 25.6px;
+  word-wrap: break-word;
+  margin-top: 24px;
+}
+
+.conheca-pnb-carrosel {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+}
+
+.content-carrosel-equipe {
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  border: 1px solid #002e5f;
+  height: 5px;
+  background-color: #002e5f;
+  width: 15px;
+  border-radius: 3px;
+}
+
+.swiper-pagination-bullet-active {
+  width: 30px;
+}
+
+.video-conheca-pnb {
+  display: flex;
+  justify-content: center;
+}
+
+.container-depoimento-pnb {
+  margin-top: 80px;
+  background-color: #fafafa;
+}
+
+.depoimento-title {
+  margin-bottom: 40px;
+}
+
+.depoimento-title h4 {
+  // Depoimentos
+  color: #002e5f;
+  font-size: 40px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 44px;
+  word-wrap: break-word;
+}
+
+.depoimento-title span {
+  // dos nossos clientes
+  color: #002e5f;
+  font-size: 40px;
+  font-family: "PT Serif";
+  font-weight: 700;
+  line-height: 44px;
+  word-wrap: break-word;
+}
+
+.contato-pnb {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 64px;
+}
+
+.title-contato-pnb {
+  width: 35%;
+}
+
+.title-contato-pnb h4 {
+  color: #002e5f;
+  font-size: 34px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 44.88px;
+  word-wrap: break-word;
+}
+
+.title-contato-pnb span {
+  color: #002e5f;
+  font-size: 34px;
+  font-family: "PT Serif";
+  font-weight: 700;
+  line-height: 44.88px;
+  word-wrap: break-word;
+}
+
+.contato-text-pnb {
+  width: 70%;
+}
+
+.contato-text-pnb h4 {
+  color: #333333;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.contato-text-pnb h5 {
+  margin-top: 24px;
+  // Lorem ipsum dolor sit amet consectetur. Porttitor sit viverra imperdiet eget augue ornare feugiat eu consequat.
+  color: #0160a6;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.box-contatos-pnb {
+  width: 100%;
+  gap: 16px;
+  display: flex;
+}
+
+.box-contatos-pnb a {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: #eeeeee;
+  border-radius: 4px;
+
+  // (11) 1234-5678
+  color: #002e5f;
+  font-size: 18px;
+  font-family: "PT Serif";
+  font-weight: 700;
+  line-height: 25.2px;
+  word-wrap: break-word;
+}
+
+.box-contatos-pnb a img {
+  width: 30px;
+  margin-right: 20px;
+}
+
+.dados-contato-pnb {
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-econo {
+  display: flex;
+  gap: 8px;
+}
+
+.dados-econo span {
+  // S&P 500
+  color: #999999;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.dados-econo-txt {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.dados-econo-txt h4 {
+  // 0.04%
+  color: #0160a6;
+  font-size: 24px;
+  font-family: "PT Serif";
+  font-weight: 700;
+  line-height: 31.68px;
+  word-wrap: break-word;
+}
+
+.dados-econo-txt span {
+  // 1.6
+  color: #999999;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.content-dados-contato-pnb {
+  display: flex;
+  gap: 40px;
+}
+
+.img-econo span {
+  width: 100%;
+  // Fonte de dados:
+  color: #999999;
+  font-size: 12px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 15.84px;
+  word-wrap: break-word;
+}
+
+.infos-contato-pnb {
+  background-color: #eeeeee;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

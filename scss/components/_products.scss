@@ -1,0 +1,923 @@
+#section-produtos {
+  background-color: #eeeeee;
+}
+
+.container-produtos {
+  padding-top: 112px;
+}
+
+.container-cursos-pnb {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-around;
+  gap: 24px;
+}
+
+.card-cursos-pnb {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 56px 32px 56px 32px;
+
+  width: 476px;
+  height: 346px;
+}
+
+.card-cursos-pnb:hover {
+  transition: 0.8s;
+  background-color: #002e5f;
+  padding-left: 50px;
+}
+
+.card-cursos-pnb:hover h4 {
+  color: white;
+}
+
+.card-cursos-pnb:hover span {
+  color: white;
+}
+
+.card-cursos-pnb:hover a {
+  background-color: #fff;
+}
+
+.card-cursos-pnb h4 {
+  color: #0160a6;
+  font-size: 28px;
+  font-family: "PT Serif";
+  font-weight: 700;
+  line-height: 36.96px;
+  word-wrap: break-word;
+}
+
+.card-cursos-pnb span {
+  color: #666666;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+
+  padding-bottom: 24px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.card-cursos-pnb a {
+  padding: 8px 0px 8px 16px;
+  border: 1px solid #002e5f;
+  border-radius: 4px;
+  width: 100px;
+  text-decoration: none;
+  margin-top: 20px;
+
+  color: #002e5f;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 22.4px;
+  word-wrap: break-word;
+}
+
+.produtos-title h4 {
+  color: #002e5f;
+  font-size: 34px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 44.88px;
+  word-wrap: break-word;
+
+  margin-bottom: 24px;
+}
+
+.produtos-title a {
+  text-decoration: none;
+}
+
+.produtos-title span:hover {
+  border-bottom: 1px solid black;
+}
+
+.produtos-title span {
+  color: #333333;
+  font-size: 21px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 29.4px;
+  word-wrap: break-word;
+}
+
+.gap-title {
+  margin-left: 40px;
+}
+
+.cards-produtos-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 64px;
+}
+
+.cards-produtos-title h1 {
+  color: #002e5f;
+  font-size: 52px;
+  font-family: "PT Serif";
+  font-weight: 700;
+  line-height: 68.64px;
+  word-wrap: break-word;
+}
+
+.cards-produtos-title span {
+  color: #333333;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.cards-produto-content {
+  margin-top: 32px;
+  display: flex;
+  gap: 24px;
+}
+
+.cards-texts {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 40px 24px 40px 24px;
+}
+
+.cards-content:hover {
+  transition: 1s;
+  padding-left: 10px;
+}
+
+.cards-texts:hover {
+  transition: 0.8s;
+  background-color: #d1cece;
+}
+
+.btn-promo {
+  padding: 7px 13px 7px 13px;
+  border-radius: 4px;
+  border: 1px solid #222222;
+  background-color: #ffffff;
+  align-items: center;
+
+  color: #222222;
+  font-size: 12px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 15.84px;
+  word-wrap: break-word;
+}
+
+.cards-texts h1 {
+  color: #666666;
+  font-size: 21px;
+  font-family: "PT Serif";
+  font-weight: 700;
+  line-height: 29.4px;
+  word-wrap: break-word;
+
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.cards-texts h3 {
+  color: #333333;
+  font-size: 40px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 44px;
+  word-wrap: break-word;
+
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.active-text {
+  color: #292929;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 600;
+  line-height: 22.4px;
+  word-wrap: break-word;
+}
+
+.inactive-text {
+  color: #666666;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+
+  margin-bottom: 8px;
+}
+
+.btn-buy {
+  padding: 8px 16px 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #002e5f;
+
+  color: #002e5f;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 22.4px;
+  word-wrap: break-word;
+}
+
+.last-card {
+  background-color: #002e5f;
+  border: 3px solid #0b68cb;
+}
+
+.last-card:hover {
+  background-color: #054890;
+}
+
+// .last-card:hover {
+//   bac
+// }
+
+.last-card button {
+  background-color: #0090e5;
+  color: #fff;
+}
+
+.last-card h1 {
+  color: white;
+  font-size: 28px;
+  font-family: "PT Serif";
+  font-weight: 700;
+  line-height: 36.96px;
+  word-wrap: break-word;
+}
+
+.last-card p {
+  color: #dddddd;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+}
+
+.last-card h3 {
+  color: white;
+  font-size: 52px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 68.64px;
+  word-wrap: break-word;
+}
+
+.last-card .btn-buy {
+  background-color: #fff;
+
+  color: #002e5f;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+
+.infos-content-banner-qs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-content-qs {
+  display: flex;
+  align-items: flex-end;
+}
+
+.share-banner-qs {
+  display: flex;
+  gap: 12px;
+}
+
+.share-banner-qs img {
+  width: 20px;
+  height: 20px;
+}
+
+.owner-infos-qs {
+  margin-top: 75px;
+}
+
+.owner-data-qs {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+}
+
+.section-owner-qs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.owner-data-qs h1 {
+  // Sobre o Suporte Extendido<br/>e o Wilson Neto
+  color: #002e5f;
+  font-size: 34px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 44.88px;
+  word-wrap: break-word;
+}
+
+.owner-data-qs span {
+  // É um dos melhores scalpers do Brasil. Fez carreira na BM&FBovespa (atual B3), operando contratos futuros de Ibovespa e dólar, e continuou a ganhar dinheiro no mercado após o fim do pregão viva-voz, quando todas as ordens passaram a ser enviadas de forma eletrônica.
+  color: #333333;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+
+  margin-top: 24px;
+}
+
+.owner-data-qs h3 {
+  // Mais de 20 mil alunos passaram pelo seu método.
+  color: #002e5f;
+  font-size: 28px;
+  font-family: "PT Serif";
+  font-weight: 700;
+  line-height: 36.96px;
+  word-wrap: break-word;
+
+  margin-top: 24px;
+}
+
+.quadros-produtos-qs {
+  background-color: #002e5f;
+}
+
+.promos-produtos-ns {
+  margin-top: 80px;
+}
+
+.title-promos-produtos-ns {
+  padding-bottom: 16px;
+  border-bottom: 2px solid gray;
+}
+
+.title-promos-produtos-ns a {
+  padding: 8px 16px 8px 16px;
+  background-color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  // Suporte Extendido PNB
+  color: #002e5f;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 21px;
+  word-wrap: break-word;
+}
+
+.margin-items-promos {
+  margin-left: 16px;
+}
+
+.card-promos-produtos-ns {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.card-valores-promos {
+  width: 60%;
+  background-color: #eeeeee;
+
+  padding: 43px 40px 64px;
+
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.card-infos-promos {
+  width: 40%;
+  background-color: #dddddd;
+  padding: 40px 80px 40px 40px;
+
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+
+  display: grid;
+  align-items: center;
+}
+
+.card-anunc-valores-promos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.card-anunc-valores-promos span {
+  background-color: #d23a20;
+  color: white;
+
+  // Poucas vagas disponíveis
+  color: white;
+  font-size: 18px;
+  font-family: "PT Serif";
+  font-weight: 700;
+  line-height: 25.2px;
+  word-wrap: break-word;
+  border-radius: 4px;
+  padding: 8px 16px 8px 16px;
+}
+
+.card-infos-valores-promos {
+  margin-top: 16px;
+}
+
+.card-infos-valores-promos h1 {
+  // SUPORTE ESTENDIDO PÕE NO BOLSO
+  color: #002e5f;
+  font-size: 28px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 36.96px;
+  word-wrap: break-word;
+}
+
+.card-infos-valores-promos h4 {
+  // 3 meses por MENOS DA METADE do preço<br/>
+  color: #333333;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 25.6px;
+  word-wrap: break-word;
+
+  margin-bottom: 30px;
+}
+
+.card-infos-valores-promos p {
+  // De:
+  color: #999999;
+  font-size: 21px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 29.4px;
+  word-wrap: break-word;
+}
+
+.card-infos-valores-promos span {
+  // R$ 666,00
+  color: #d23a20;
+  font-size: 40px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 44px;
+  word-wrap: break-word;
+}
+
+.apenas-infos-valores-promos {
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+
+  margin-top: -15px;
+
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+}
+
+.apenas-infos-valores-promos h5 {
+  // ou
+  color: #0160a6;
+  font-size: 24px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 31.68px;
+  word-wrap: break-word;
+}
+
+.apenas-infos-valores-promos h3 {
+  // R$ 297,00
+  color: #002e5f;
+  font-size: 40px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 44px;
+  word-wrap: break-word;
+}
+
+.card-infos-p-margin {
+  margin-top: 42px;
+}
+
+.bandeiras-valores-promos {
+  margin-top: 24px;
+}
+
+.bandeiras-valores-promos a {
+  text-decoration: none;
+}
+
+.bandeiras-valores-promos span {
+  // QUERO O PLANO PROMOCIONAL DE 3 MESES
+  color: white;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
+  border-radius: 4px;
+  background-color: #002e5f;
+
+  padding: 10px 16px 10px 16px;
+}
+
+.content-bandeiras-valores {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+}
+
+.content-bandeiras-valores img {
+  height: 20px;
+}
+
+.card-infos-promos h5 {
+  // O que você vai receber:
+  color: #1938a6;
+  font-size: 18px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 25.2px;
+  word-wrap: break-word;
+
+  margin-bottom: -40px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Niramit:300,300i,700");
+
+// reset some browser default styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// colors
+$primary: #002e5f;
+$secondary: #4f537b;
+$info: #11cdef;
+$success: #00bf9a;
+$warning: #ff8d72;
+$danger: #fd5d93;
+
+// timeline variables
+$body-bg: #1e1e2f;
+$timeline-before-bg: #222a42;
+$timeline-body-bg: #999999;
+$timeline-body-round: 3px;
+$timeline-body-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
+
+// timeline style
+.timeline {
+  position: relative;
+  padding-left: 4rem;
+  margin: 0 0 0 30px;
+  color: white;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 2px;
+    height: 80%;
+    background: $timeline-body-bg;
+  }
+
+  .timeline-container {
+    position: relative;
+    margin-bottom: 2.5rem;
+
+    .timeline-icon {
+      position: absolute;
+      left: -78px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      // align-items: center;
+      // justify-content: center;
+      // text-align: center;
+      font-size: 2rem;
+      // background: $secondary;
+
+      i {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      img {
+        width: 20px;
+        margin-left: 4px;
+        margin-top: 5px;
+      }
+    }
+
+    .timeline-body {
+      h2 {
+        // CANAL EXCLUSIVO PARA TIRAR SUAS DÚVIDAS
+        color: #666666;
+        font-size: 21px;
+        font-family: "PT Serif";
+        font-weight: 400;
+        line-height: 29.4px;
+        word-wrap: break-word;
+      }
+
+      &:before {
+        content: "";
+        background: inherit;
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: absolute;
+        left: -10px;
+        transform: rotate(45deg);
+        border-radius: 0 0 0 2px;
+      }
+
+      .timeline-title {
+        margin-bottom: 1.4rem;
+
+        .badge {
+          background: $secondary;
+          padding: 4px 8px;
+          border-radius: 3px;
+          font-size: 12px;
+          font-weight: bold;
+        }
+      }
+
+      .timeline-subtitle {
+        font-weight: 300;
+        font-style: italic;
+        opacity: 0.4;
+        margin-top: 16px;
+        font-size: 11px;
+      }
+    }
+
+    // Primary Timeline
+    &.primary {
+      .badge,
+      .timeline-icon {
+        background: $primary !important;
+      }
+    }
+
+    // Info Timeline
+    &.info {
+      .badge,
+      .timeline-icon {
+        background: $info !important;
+      }
+    }
+
+    // Success Timeline
+    &.success {
+      .badge,
+      .timeline-icon {
+        background: $success !important;
+      }
+    }
+
+    // Warning Timeline
+    &.warning {
+      .badge,
+      .timeline-icon {
+        background: $warning !important;
+      }
+    }
+
+    // Dnager Timeline
+    &.danger {
+      .badge,
+      .timeline-icon {
+        background: $danger !important;
+      }
+    }
+  }
+}
+
+.author {
+  font-family: inherit;
+  padding: 3em;
+  text-align: center;
+  width: 100%;
+  color: white;
+
+  a:link,
+  a:visited {
+    color: white;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .btn:link,
+  .btn:visited {
+    margin-top: 1em;
+    text-decoration: none;
+    display: inline-block;
+    font-family: inherit;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: black;
+    padding: 1.5em 2rem;
+    border-radius: 1em;
+    transition: 0.5s all;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: lighten(black, 10%);
+    }
+  }
+}
+
+#first-icon-timeline {
+  margin-top: 30px;
+}
+
+#middle-icon-timeline {
+  margin-top: 25px;
+}
+
+#last-icon-timeline {
+  margin-top: 10px;
+}
+
+.line-card-infos-promos {
+  margin-top: -120px;
+}
+
+$bg: #fff;
+$text: #7288a2;
+$gray: #4d5974;
+$lightgray: #e5e5e5;
+$blue: #03b5d2;
+
+.accordion {
+  .accordion-item {
+    border-bottom: 1px solid $lightgray;
+    button[aria-expanded="true"] {
+      border-bottom: 1px solid $blue;
+    }
+  }
+
+  button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: $text;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+
+    background: none;
+    outline: none;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      color: $blue;
+      &::after {
+        cursor: pointer;
+        color: $blue;
+        border: 1px solid $blue;
+      }
+    }
+    .accordion-title {
+      padding: 1em 1.5em 1em 0;
+      // Como funciona o suporte privado
+      color: #0160a6;
+      font-size: 24px;
+      font-family: "PT Serif";
+      font-weight: 400;
+      line-height: 31.68px;
+      word-wrap: break-word;
+    }
+    .icon {
+      display: inline-block;
+      position: absolute;
+      top: 18px;
+      right: 0;
+      width: 22px;
+      height: 22px;
+      // border: 1px solid;
+      // border-radius: 22px;
+      &::before {
+        display: block;
+        position: absolute;
+        content: "";
+        margin-top: 6px;
+        top: 9px;
+        left: 5px;
+        width: 10px;
+        height: 2px;
+        background: rgb(0, 46, 95);
+      }
+      &::after {
+        display: block;
+        position: absolute;
+        content: "";
+        margin-top: 6px;
+        top: 5px;
+        left: 9px;
+        width: 2px;
+        height: 10px;
+        background: rgb(0, 46, 95);
+      }
+    }
+  }
+  button[aria-expanded="true"] {
+    color: $blue;
+    .icon {
+      &::after {
+        width: 0;
+      }
+    }
+    + .accordion-content {
+      opacity: 1;
+      max-height: 9em;
+      transition: all 200ms linear;
+      will-change: opacity, max-height;
+    }
+  }
+  .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+      margin: 2em 0;
+    }
+  }
+}
+
+.container-faq-ns {
+  padding-top: 80px;
+  padding-bottom: 64px;
+}
+
+.container-faq-ns h2 {
+  // Dúvidas Frequentes
+  color: #002e5f;
+  font-size: 34px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 44.88px;
+  word-wrap: break-word;
+}
+
+#accordion-button-1 {
+  border-bottom: 1px solid gray;
+}
+
+#accordion-button-2 {
+  border-bottom: 1px solid gray;
+}
+
+#accordion-button-3 {
+  border-bottom: 1px solid gray;
+}
+
+#accordion-button-1:hover {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#accordion-button-2:hover {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#accordion-button-3:hover {
+  padding-left: 20px;
+  padding-right: 20px;
+}

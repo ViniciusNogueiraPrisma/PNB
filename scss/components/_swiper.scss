@@ -1,0 +1,77 @@
+// .swiper {
+//   width: 100%;
+// }
+
+// .swiper-slide {
+//   // border: 1px solid red;
+//   text-align: center;
+//   font-size: 18px;
+//   background: #fff;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .swiper-slide img {
+//   display: block;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }
+
+// .swiper-slide {
+//   display: grid;
+// }
+
+
+.swiper-content {
+  background-color: #eeeeee;
+  height: 207px;
+  // width: 400px;
+  margin-bottom: 50px;
+  text-align: start;
+  padding: 40px 32px 40px 32px;
+}
+
+.swiper-content h4 {
+  color: #002e5f;
+  font-size: 28px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 36.96px;
+  word-wrap: break-word;
+}
+
+.swiper-content p {
+  color: #999999;
+  font-size: 21px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 29.4px;
+  word-wrap: break-word;
+  margin-top: -5px;
+}
+
+.swiper-content-icon span {
+  color: #01518c;
+  font-size: 21px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  line-height: 29.4px;
+  word-wrap: break-word;
+}
+
+.swiper-content-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.swiper-content img {
+  width: 24px;
+}
+
+// * {
+//   border: 1px solid red;
+// }
