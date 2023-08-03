@@ -61,13 +61,8 @@
   width: 50%;
 }
 
-* {
-  border: 1px solid red;
+@media (max-width: 800px) {
+  .texts-home button {
+    width: 100%;
+  }
 }
-
-
-// @media (max-width: 800px) {
-//   .swiper-content {
-//     max-width: 74%;
-//   }
-// }
