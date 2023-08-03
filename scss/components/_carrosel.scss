@@ -1,6 +1,6 @@
 .container-carrosel {
   padding-left: 72px;
-  // padding-right: 72px;
+  padding-right: 72px;
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -9,6 +9,7 @@
   display: flex;
   // height: 406px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .content-text-carrosel {
@@ -59,3 +60,14 @@
 .content-carrosel-eng {
   width: 50%;
 }
+
+* {
+  border: 1px solid red;
+}
+
+
+// @media (max-width: 800px) {
+//   .swiper-content {
+//     max-width: 74%;
+//   }
+// }

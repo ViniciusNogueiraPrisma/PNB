@@ -176,6 +176,37 @@
   z-index: 1;
 }
 
+.infos-img-qs {
+  position: absolute;
+  background-color: #01518c;
+
+  color: white;
+  padding: 16px 100px 16px 30px;
+  border-radius: 4px;
+  margin-top: 480px;
+  margin-left: 20px;
+
+  h1 {
+    // Wilson Neto
+    color: white;
+    font-size: 21px;
+    font-family: "PT Serif";
+    font-weight: 700;
+    line-height: 29.4px;
+    word-wrap: break-word;
+  }
+
+  span {
+    // CEO, Trader
+    color: #dddddd;
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 22.4px;
+    word-wrap: break-word;
+  }
+}
+
 .card-img-qs img {
   margin-left: 10.319917440660475vh;
   height: 615px;
@@ -418,6 +449,7 @@
   font-weight: 700;
   line-height: 31.68px;
   word-wrap: break-word;
+  margin: 0;
 }
 
 .dados-econo-txt span {

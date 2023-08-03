@@ -54,6 +54,17 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+
     <!-- <link rel="stylesheet" href="css/import.dist.min.css" media="all" /> -->
 
     <link rel="stylesheet" href="./scss/import.css" />
@@ -62,10 +73,42 @@
   <body>
     <noscript>Your browser does not support JavaScript!</noscript>
 
+    <header class="header-qs">
+      <div class="header-acessibilidade">
+        <div class="header-tools">
+          <span>Acessibilidade</span>
+          <a href=""
+            ><img src="./images/new-images/icons/icon-const.svg" alt=""
+          /></a>
+          <a href=""
+            ><img src="./images/new-images/icons/icon-diminuir.svg" alt=""
+          /></a>
+          <a href=""
+            ><img src="./images/new-images/icons/icon-aumentar.svg" alt=""
+          /></a>
+        </div>
+
+        <div class="header-language">
+          <img src="./images/new-images/icons/icon-world.svg" alt="" />
+          <a href=""><span>EN</span></a>
+        </div>
+      </div>
+    </header>
+
     <div class="headerFixoMenu">
       <header class="header">
         <div class="banner-container">
           <nav>
+            <div class="container nav-after-items">
+              <img src="./images/new-images/logotipo.png" alt="" />
+              <button
+                type="button"
+                class="toggle-mobile-menu"
+                aria-label="Abrir Menu"
+              >
+                <span class="icon-nav" title="Abrir Menu"></span>
+              </button>
+            </div>
             <div class="nav-content">
               <div class="nav-logo">
                 <img src="./images/new-images/logotipo.png" alt="" />
@@ -109,14 +152,6 @@
               </div>
             </div>
           </div>
-
-          <button
-            type="button"
-            class="toggle-mobile-menu"
-            aria-label="Abrir Menu"
-          >
-            <span class="icon-nav" title="Abrir Menu"></span>
-          </button>
         </div>
       </header>
     </div>
@@ -600,27 +635,27 @@
     </aside>
 
     <main id="main-home">
-      <section class="container container-responsivo-full container-texts">
+      <section class="container-responsivo-full container container-texts">
         <div class="content-main">
           <div class="content-text">
-            <div class="content-numbers">
+            <div class="content-numbers content-n-1">
               <p>S&P 500</p>
-              <span>0.04% 1.6</span>
+              <span>0.04% <small>1.6</small></span>
             </div>
 
-            <div class="content-numbers">
+            <div class="content-numbers content-n-2">
               <p>US 100</p>
-              <span>0.08% 1.6</span>
+              <span>0.08% <small>1.6</small></span>
             </div>
 
-            <div class="content-numbers">
+            <div class="content-numbers content-n-3">
               <p>Bitcoin</p>
-              <span>1.18% 1.6</span>
+              <span>1.18% <small>1.6</small></span>
             </div>
 
-            <div class="content-numbers">
+            <div class="content-numbers content-n-4">
               <p>Etherum</p>
-              <span>0.74% 1.6</span>
+              <span>0.74% <small>1.6</small></span>
             </div>
           </div>
 
@@ -691,6 +726,35 @@
               <span>+ 34 MIL INSCRITOS NO TELEGRAM</span>
             </div>
           </div>
+
+          <div class="cards-home-carrosel">
+            <div class="swiper mySwiper-carrosel-h">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card-content">
+                    <img
+                      src="./images/new-images/icons/icon_youtube.svg"
+                      alt=""
+                    />
+                    <h3>75000+</h3>
+                    <span>+ DE 75 MIL INSCRITOS </span>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card-content">
+                    <img
+                      src="./images/new-images/icons/icon_youtube.svg"
+                      alt=""
+                    />
+                    <h3>2500+</h3>
+                    <span>+ DE 15 MIL INSCRITOS </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination-carrosel-h"></div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -702,6 +766,7 @@
             Conheça o time <br />
             <span>da PNB</span>
           </h1>
+
           <p>
             Lorem ipsum dolor sit amet consectetur. Sit aliquet nibh consectetur
             sociis turpis et. Donec feugiat consectetur iaculis pellentesque
@@ -830,7 +895,7 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="swiper-pagination"></div> -->
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -840,8 +905,8 @@
       <div class="container container-responsivo-full container-produtos">
         <div class="produtos-title">
           <h4>Nossos Produtos</h4>
-          <a href="#" id="link1"><span>Suporte Extendido</span></a>
-          <a href="#" id="link2"><span class="gap-title">Cursos PNB</span></a>
+          <a href="#" id="link1"><span id="link1">Suporte Extendido</span></a>
+          <a href="#"><span class="gap-title" id="link2">Cursos PNB</span></a>
         </div>
 
         <div class="cards-produtos-container" id="div1">
@@ -1026,168 +1091,238 @@
           </div>
 
           <div class="carrosel-pnb">
-            <div class="container-responsivo-full swiper myPNB">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide swiper-pnb">
-                  <div class="card-carrosel-pnb">
-                    <div class="box-img">
-                      <img src="./images/new-images/Time/box.svg" alt="" />
-
-                      <div class="icon-box">
-                        <img
-                          src="./images/new-images/icons/icon-play.svg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-
-                    <div class="box-text">
-                      <span
-                        >Lorem ipsum dolor sit amet consectetur. Sit aliquet
-                        nibh consectetur sociis turpis et. Donec feugiat
-                        consectetur iaculis pellentesque odio semper ut
-                        feugiat.</span
-                      >
-
-                      <div class="box-names">
-                        <div class="box-txt-name">
-                          <span>Daniel Silva</span>
-                          <p>Itaú</p>
-                        </div>
-                        <div class="box-notes">
-                          <img
-                            src="./images/new-images/icons/icon-star.svg"
-                            alt=""
-                          />
-                          <img
-                            src="./images/new-images/icons/icon-star.svg"
-                            alt=""
-                          />
-                          <img
-                            src="./images/new-images/icons/icon-star.svg"
-                            alt=""
-                          />
-                          <img
-                            src="./images/new-images/icons/icon-star.svg"
-                            alt=""
-                          />
-                          <img
-                            src="./images/new-images/icons/icon-star-border.svg"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide swiper-pnb">
-                  <div class="card-carrosel-pnb">
-                    <div class="box-img">
-                      <img src="./images/new-images/Time/box.svg" alt="" />
-
-                      <div class="icon-box">
-                        <img
-                          src="./images/new-images/icons/icon-play.svg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-
-                    <div class="box-text">
-                      <span
-                        >Lorem ipsum dolor sit amet consectetur. Sit aliquet
-                        nibh consectetur sociis turpis et. Donec feugiat
-                        consectetur iaculis pellentesque odio semper ut
-                        feugiat.</span
-                      >
-
-                      <div class="box-names">
-                        <div class="box-txt-name">
-                          <span>Daniel Silva</span>
-                          <p>Itaú</p>
-                        </div>
-                        <div class="box-notes">
-                          <img
-                            src="./images/new-images/icons/icon-star.svg"
-                            alt=""
-                          />
-                          <img
-                            src="./images/new-images/icons/icon-star.svg"
-                            alt=""
-                          />
-                          <img
-                            src="./images/new-images/icons/icon-star.svg"
-                            alt=""
-                          />
-                          <img
-                            src="./images/new-images/icons/icon-star.svg"
-                            alt=""
-                          />
-                          <img
-                            src="./images/new-images/icons/icon-star-border.svg"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide swiper-pnb">
-                  <div class="card-carrosel-pnb">
-                    <div class="box-img">
-                      <img src="./images/new-images/Time/box.svg" alt="" />
-
-                      <div class="icon-box">
-                        <img
-                          src="./images/new-images/icons/icon-play.svg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-
-                    <div class="box-text">
-                      <span
-                        >Lorem ipsum dolor sit amet consectetur. Sit aliquet
-                        nibh consectetur sociis turpis et. Donec feugiat
-                        consectetur iaculis pellentesque odio semper ut
-                        feugiat.</span
-                      >
-
-                      <div class="box-names">
-                        <div class="box-txt-name">
-                          <span>Daniel Silva</span>
-                          <p>Itaú</p>
-                        </div>
-                        <div class="box-notes">
-                          <img
-                            src="./images/new-images/icons/icon-star.svg"
-                            alt=""
-                          />
-                          <img
-                            src="./images/new-images/icons/icon-star.svg"
-                            alt=""
-                          />
-                          <img
-                            src="./images/new-images/icons/icon-star.svg"
-                            alt=""
-                          />
-                          <img
-                            src="./images/new-images/icons/icon-star.svg"
-                            alt=""
-                          />
-                          <img
-                            src="./images/new-images/icons/icon-star-border.svg"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="container container-responsivo-full">
               <!-- <div class="swiper-pagination sw-pnb"></div> -->
+
+              <section class="splide" aria-label="Slide Container Example">
+                <div class="splide__track">
+                  <div class="splide__list">
+                    <div class="splide__slide">
+                      <div class="splide__slide__container">
+                        <div class="card-carrosel-pnb">
+                          <div class="box-img">
+                            <img
+                              src="./images/new-images/Time/box.svg"
+                              alt=""
+                            />
+
+                            <div class="icon-box">
+                              <img
+                                src="./images/new-images/icons/icon-play.svg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+
+                          <div class="box-text">
+                            <span
+                              >Lorem ipsum dolor sit amet consectetur. Sit
+                              aliquet nibh consectetur sociis turpis et. Donec
+                              feugiat consectetur iaculis pellentesque odio
+                              semper ut feugiat.</span
+                            >
+
+                            <div class="box-names">
+                              <div class="box-txt-name">
+                                <span>Daniel Silva</span>
+                                <p>Itaú</p>
+                              </div>
+                              <div class="box-notes">
+                                <img
+                                  src="./images/new-images/icons/icon-star.svg"
+                                  alt=""
+                                />
+                                <img
+                                  src="./images/new-images/icons/icon-star.svg"
+                                  alt=""
+                                />
+                                <img
+                                  src="./images/new-images/icons/icon-star.svg"
+                                  alt=""
+                                />
+                                <img
+                                  src="./images/new-images/icons/icon-star.svg"
+                                  alt=""
+                                />
+                                <img
+                                  src="./images/new-images/icons/icon-star-border.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card-carrosel-pnb">
+                          <div class="box-img">
+                            <img
+                              src="./images/new-images/Time/box.svg"
+                              alt=""
+                            />
+
+                            <div class="icon-box">
+                              <img
+                                src="./images/new-images/icons/icon-play.svg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+
+                          <div class="box-text">
+                            <span
+                              >Lorem ipsum dolor sit amet consectetur. Sit
+                              aliquet nibh consectetur sociis turpis et. Donec
+                              feugiat consectetur iaculis pellentesque odio
+                              semper ut feugiat.</span
+                            >
+
+                            <div class="box-names">
+                              <div class="box-txt-name">
+                                <span>Daniel Silva</span>
+                                <p>Itaú</p>
+                              </div>
+                              <div class="box-notes">
+                                <img
+                                  src="./images/new-images/icons/icon-star.svg"
+                                  alt=""
+                                />
+                                <img
+                                  src="./images/new-images/icons/icon-star.svg"
+                                  alt=""
+                                />
+                                <img
+                                  src="./images/new-images/icons/icon-star.svg"
+                                  alt=""
+                                />
+                                <img
+                                  src="./images/new-images/icons/icon-star.svg"
+                                  alt=""
+                                />
+                                <img
+                                  src="./images/new-images/icons/icon-star-border.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="splide__slide">
+                      <div class="splide__slide__container">
+                        <div class="card-carrosel-pnb">
+                          <div class="box-img">
+                            <img
+                              src="./images/new-images/Time/box.svg"
+                              alt=""
+                            />
+
+                            <div class="icon-box">
+                              <img
+                                src="./images/new-images/icons/icon-play.svg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+
+                          <div class="box-text">
+                            <span
+                              >Lorem ipsum dolor sit amet consectetur. Sit
+                              aliquet nibh consectetur sociis turpis et. Donec
+                              feugiat consectetur iaculis pellentesque odio
+                              semper ut feugiat.</span
+                            >
+
+                            <div class="box-names">
+                              <div class="box-txt-name">
+                                <span>Daniel Silva</span>
+                                <p>Itaú</p>
+                              </div>
+                              <div class="box-notes">
+                                <img
+                                  src="./images/new-images/icons/icon-star.svg"
+                                  alt=""
+                                />
+                                <img
+                                  src="./images/new-images/icons/icon-star.svg"
+                                  alt=""
+                                />
+                                <img
+                                  src="./images/new-images/icons/icon-star.svg"
+                                  alt=""
+                                />
+                                <img
+                                  src="./images/new-images/icons/icon-star.svg"
+                                  alt=""
+                                />
+                                <img
+                                  src="./images/new-images/icons/icon-star-border.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card-carrosel-pnb">
+                          <div class="box-img">
+                            <img
+                              src="./images/new-images/Time/box.svg"
+                              alt=""
+                            />
+
+                            <div class="icon-box">
+                              <img
+                                src="./images/new-images/icons/icon-play.svg"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+
+                          <div class="box-text">
+                            <span
+                              >Lorem ipsum dolor sit amet consectetur. Sit
+                              aliquet nibh consectetur sociis turpis et. Donec
+                              feugiat consectetur iaculis pellentesque odio
+                              semper ut feugiat.</span
+                            >
+
+                            <div class="box-names">
+                              <div class="box-txt-name">
+                                <span>Daniel Silva</span>
+                                <p>Itaú</p>
+                              </div>
+                              <div class="box-notes">
+                                <img
+                                  src="./images/new-images/icons/icon-star.svg"
+                                  alt=""
+                                />
+                                <img
+                                  src="./images/new-images/icons/icon-star.svg"
+                                  alt=""
+                                />
+                                <img
+                                  src="./images/new-images/icons/icon-star.svg"
+                                  alt=""
+                                />
+                                <img
+                                  src="./images/new-images/icons/icon-star.svg"
+                                  alt=""
+                                />
+                                <img
+                                  src="./images/new-images/icons/icon-star-border.svg"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
         </div>
@@ -1201,7 +1336,55 @@
         </div>
 
         <div class="accordion-duvida">
-          <div class="accordion-menu">
+          <div class="accordion">
+            <div class="accordion-item">
+              <button id="accordion-button-1" aria-expanded="false">
+                <span class="accordion-title"
+                  >Como funciona o suporte privado</span
+                ><span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                  viverra suspendisse potenti.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button id="accordion-button-2" aria-expanded="false">
+                <span class="accordion-title">Como acesso os cursos</span
+                ><span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                  viverra suspendisse potenti.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button id="accordion-button-3" aria-expanded="false">
+                <span class="accordion-title"
+                  >Posso assistir as aulas a qualquer momento</span
+                ><span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                  viverra suspendisse potenti.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="accordion-menu">
             <ul>
               <li>
                 <input type="checkbox" checked />
@@ -1230,7 +1413,7 @@
                 </p>
               </li>
             </ul>
-          </div>
+          </div> -->
         </div>
 
         <div class="parceiros-duvida">
@@ -1391,6 +1574,11 @@
     <script defer src="vendor/jquery.min.js"></script>
     <script defer src="vendor/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+     "></script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.min.js"
       integrity="sha512-0N/5ZOjfsh3niel+5dRD40HQkFOWaxoVzqMVAHnmAO2DC3nY/TFB7OYTaPRAFJ571IRS/XRsXGb2XyiFLFeu1g=="

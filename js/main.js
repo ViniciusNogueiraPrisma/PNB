@@ -320,6 +320,29 @@ if (tableWithScroll) {
   });
 }
 
+// Obter referências aos links e divs dos produtos
+
+// Funções para mostrar e esconder os detalhes dos produtos
+function showDivProduto(element) {
+  element.style.display = "flex";
+}
+
+function hideDivProdutos(elements) {
+  elements.forEach((element) => {
+    element.style.display = "none";
+  });
+}
+
+// Função para definir o link ativo
+function setActiveLink(activeLink) {
+  // Remover a classe "active-link" de todos os links
+  const links = document.querySelectorAll("a");
+  links.forEach((link) => link.classList.remove("active-link"));
+
+  // Adicionar a classe "active-link" apenas ao link ativo
+  activeLink.classList.add("active-link");
+}
+
 const items = document.querySelectorAll(".accordion button");
 
 function toggleAccordion() {
@@ -490,3 +513,42 @@ if (window.matchMedia("(min-width: 991px)").matches) {
 // $(".owl-carousel .owl-item .nav-item").on("click", function (e) {
 //   $(".owl-carousel").trigger("refresh.owl.carousel");
 // });
+
+const produto1 = document.getElementById("produto1");
+const produto2 = document.getElementById("produto2");
+const produto3 = document.getElementById("produto3");
+const produto4 = document.getElementById("produto4");
+
+const divProduto1 = document.getElementById("divProduto1");
+const divProduto2 = document.getElementById("divProduto2");
+const divProduto3 = document.getElementById("divProduto3");
+const divProduto4 = document.getElementById("divProduto4");
+
+// Adicionar ouvintes de evento para os links dos produtos
+produto1.addEventListener("click", (event) => {
+  event.preventDefault();
+  showDivProduto(divProduto1);
+  hideDivProdutos([divProduto2, divProduto3, divProduto4]);
+  setActiveLink(produto1);
+});
+
+produto2.addEventListener("click", (event) => {
+  event.preventDefault();
+  showDivProduto(divProduto2);
+  hideDivProdutos([divProduto1, divProduto3, divProduto4]);
+  setActiveLink(produto2);
+});
+
+produto3.addEventListener("click", (event) => {
+  event.preventDefault();
+  showDivProduto(divProduto3);
+  hideDivProdutos([divProduto1, divProduto2, divProduto4]);
+  setActiveLink(produto3);
+});
+
+produto4.addEventListener("click", (event) => {
+  event.preventDefault();
+  showDivProduto(divProduto4);
+  hideDivProdutos([divProduto1, divProduto2, divProduto3]);
+  setActiveLink(produto4);
+});

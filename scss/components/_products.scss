@@ -18,13 +18,13 @@
   flex-direction: column;
   background-color: #ffffff;
   padding: 56px 32px 56px 32px;
-
+  transition: 0.8s ease;
   width: 476px;
   height: 346px;
 }
 
 .card-cursos-pnb:hover {
-  transition: 0.8s;
+  transition: 0.8s ease;
   background-color: #002e5f;
   padding-left: 50px;
 }
@@ -93,9 +93,9 @@
   text-decoration: none;
 }
 
-.produtos-title span:hover {
-  border-bottom: 1px solid black;
-}
+// .produtos-title span:hover {
+//   border-bottom: 1px solid black;
+// }
 
 .produtos-title span {
   color: #333333;
@@ -116,6 +116,7 @@
   align-items: center;
 
   margin-top: 64px;
+  margin-bottom: 64px;
 }
 
 .cards-produtos-title h1 {
@@ -146,16 +147,21 @@
   background-color: #ffffff;
   border-radius: 8px;
   padding: 40px 24px 40px 24px;
-}
-
-.cards-content:hover {
-  transition: 1s;
-  padding-left: 10px;
+  transition: 0.5s ease;
 }
 
 .cards-texts:hover {
-  transition: 0.8s;
+  transition: 0.5s ease;
   background-color: #d1cece;
+}
+
+.cards-content {
+  transition: 0.5s ease;
+}
+
+.cards-content:hover {
+  padding-left: 10px;
+  transition: 0.5s ease;
 }
 
 .btn-promo {
@@ -233,15 +239,12 @@
 .last-card {
   background-color: #002e5f;
   border: 3px solid #0b68cb;
+  margin-top: -20px;
 }
 
 .last-card:hover {
   background-color: #054890;
 }
-
-// .last-card:hover {
-//   bac
-// }
 
 .last-card button {
   background-color: #0090e5;
@@ -811,7 +814,6 @@ $blue: #03b5d2;
     }
     .accordion-title {
       padding: 1em 1.5em 1em 0;
-      // Como funciona o suporte privado
       color: #0160a6;
       font-size: 24px;
       font-family: "PT Serif";
@@ -897,27 +899,78 @@ $blue: #03b5d2;
 
 #accordion-button-1 {
   border-bottom: 1px solid gray;
+  transition: 0.5s ease;
 }
 
 #accordion-button-2 {
   border-bottom: 1px solid gray;
+  transition: 0.5s ease;
 }
 
 #accordion-button-3 {
   border-bottom: 1px solid gray;
+  transition: 0.5s ease;
 }
 
 #accordion-button-1:hover {
   padding-left: 20px;
-  padding-right: 20px;
+  transition: 0.5s ease;
 }
 
 #accordion-button-2:hover {
   padding-left: 20px;
-  padding-right: 20px;
+  transition: 0.5s ease;
 }
 
 #accordion-button-3:hover {
   padding-left: 20px;
-  padding-right: 20px;
+  transition: 0.5s ease;
 }
+
+.cards-home-carrosel {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .cards-produto-content {
+    display: none;
+  }
+
+  .cards-home {
+    display: none;
+  }
+
+  .cards-home-carrosel {
+    display: block;
+
+    .swiper-pagination-carrosel-h {
+      display: flex;
+      justify-content: center;
+      color: white;
+      margin-top: 24px;
+    }
+
+    .swiper-pagination-bullet {
+      background-color: white;
+    }
+  }
+
+  .content-carrosel {
+    flex-direction: column;
+    align-items: start;
+
+    .content-text-carrosel {
+      width: 100%;
+    }
+
+    .content-carrosel-eng {
+      margin-top: 24px;
+      width: 100%;
+      padding: 0;
+    }
+  }
+}
+
+// * {
+//   border: 1px solid red;
+// }
