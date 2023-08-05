@@ -1339,7 +1339,7 @@ nav {
   height: 2px;
   width: 21px;
   display: block;
-  background: black;
+  background: var(--text-white);
   transition: 0.5s ease;
   position: relative;
   border-radius: 2px;
@@ -1352,7 +1352,7 @@ nav {
   border-radius: 2px;
   display: block;
   position: absolute;
-  background: black;
+  background: var(--text-white);
   transition: 0.5s ease;
 }
 .toggle-mobile-menu span::before {
@@ -1467,9 +1467,9 @@ nav {
     display: block;
     color: black;
   }
-  /* .toggle-mobile-menu ::after {
+  .toggle-mobile-menu ::after {
     border: 1px solid black;
-  } */
+  }
   .toggle-mobile-menu ::before {
     border: 1px solid black;
   }
@@ -4261,6 +4261,12 @@ footer {
   }
   .news-buttons {
     display: grid;
+  }
+}
+@media (max-width: 450px) {
+  .container-footer {
+    margin-left: 25px;
+    margin-right: 25px;
   }
 }
 .table {

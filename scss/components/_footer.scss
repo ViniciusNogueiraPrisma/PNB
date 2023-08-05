@@ -406,3 +406,10 @@ footer {
     display: grid;
   }
 }
+
+@media (max-width: 450px) {
+  .container-footer {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
