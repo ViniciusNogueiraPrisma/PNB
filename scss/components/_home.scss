@@ -119,6 +119,17 @@
     width: 100%;
   }
 
+  .swiper-pagination-carrosel-produtos {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    margin-top: 24px;
+
+    .swiper-pagination-bullet {
+      background-color: #002e5f;
+    }
+  }
+
   .cards-home {
     grid-template-columns: auto auto;
   }

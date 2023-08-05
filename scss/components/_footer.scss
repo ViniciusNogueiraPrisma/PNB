@@ -10,6 +10,10 @@ footer {
   gap: 24px;
 }
 
+.content-image-footer-carrosel {
+  display: none;
+}
+
 .card-footer-content {
   width: 100%;
   height: 300px;
@@ -20,15 +24,18 @@ footer {
 }
 
 .one {
-  background-image: url("../../images/new-images/Home/bg-footer-1.png");
+  // background-image: url("../../images/new-images/Home/bg-footer-1.png");
+  background-color: black;
 }
 
 .two {
-  background-image: url("https://template.riweb.com.br/TC-ri/thumb/thumb-projeto.jpg");
+  // background-image: url("../../images/new-images/Home/tc-banner.png");
+  background-color: black;
 }
 
 .three {
-  background-image: url("../../images/new-images/Home/bg-footer-3.png");
+  // background-image: url("../../images/new-images/Home/bg-footer-3.png");
+  background-color: black;
 }
 
 .one p {
@@ -339,4 +346,63 @@ footer {
   align-items: center;
   display: flex;
   gap: 15px;
+}
+
+@media (max-width: 1250px) {
+  .logo-footer {
+    display: none;
+  }
+
+  .sobre-footer {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper-footer {
+    height: 332px;
+  }
+
+  .swiper-pagination-footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 24px;
+
+    .swiper-pagination-bullet {
+      color: white;
+      background: white;
+    }
+  }
+
+  .content-image-footer {
+    display: none;
+  }
+
+  .content-image-footer-carrosel {
+    margin-top: -120px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 647px) {
+  .news-footer input {
+    width: 100%;
+  }
+
+  .news-footer button {
+    justify-content: center;
+  }
+
+  .news-footer {
+    border-left: none;
+    padding-left: 0;
+    margin-top: -48px;
+  }
+
+  .news-buttons {
+    display: grid;
+  }
 }

@@ -31,8 +31,107 @@ var swiper = new Swiper(".mySwiper-carrosel-h", {
   },
   pagination: {
     el: ".swiper-pagination-carrosel-h",
+    clickable: true,
   },
 });
+
+var swiperProdutos = new Swiper(".mySwiper-carrosel-produtos", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  // autoplay: {
+  //   delay: 1500,
+  //   disableOnInteraction: false,
+  // },
+  pagination: {
+    el: ".swiper-pagination-carrosel-produtos",
+    clickable: true,
+  },
+});
+
+var swiperCursos = new Swiper(".mySwiper-carrosel-cursos", {
+  slidesPerView: 1,
+  centeredSlides: true,
+  spaceBetween: 10,
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+var swiperAval = new Swiper(".mySwiper-avaliacao", {
+  slidesPerView: 2,
+  spaceBetween: 10,
+  // autoplay: {
+  //   delay: 1500,
+  //   disableOnInteraction: false,
+  // },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+function checkWindowSizeAval() {
+  if (window.innerWidth <= 1200) {
+    swiperAval.params.slidesPerView = 1;
+  } else {
+    swiperAval.params.slidesPerView = 2;
+  }
+
+  swiperAval.update();
+}
+
+checkWindowSizeAval();
+window.addEventListener("resize", checkWindowSizeAval);
+
+var swiperFooter = new Swiper(".mySwiper-footer", {
+  slidesPerView: 2,
+  spaceBetween: 10,
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination-footer",
+    clickable: true,
+  },
+});
+
+function checkWindowSizeFooter() {
+  if (window.innerWidth <= 780) {
+    swiperFooter.params.slidesPerView = 1;
+  } else {
+    swiperFooter.params.slidesPerView = 2;
+  }
+
+  swiperFooter.update();
+}
+
+checkWindowSizeFooter();
+window.addEventListener("resize", checkWindowSizeFooter);
+
+function checkWindowSizeProdutos() {
+  if (window.innerWidth < 993) {
+    swiperProdutos.params.slidesPerView = 2;
+  } else {
+    swiperProdutos.params.slidesPerView = 3;
+  }
+
+  if (window.innerWidth < 767) {
+    swiperProdutos.params.slidesPerView = 1;
+  } else {
+    swiperProdutos.params.slidesPerView = 2;
+  }
+
+  swiperProdutos.update();
+}
+
+checkWindowSizeProdutos();
+window.addEventListener("resize", checkWindowSizeProdutos);
 
 var swiper = new Swiper(".mySwiperEquipe", {
   slidesPerView: 3,
@@ -60,12 +159,12 @@ var swiper = new Swiper(".myPNB", {
   },
 });
 
-var splide = new Splide(".splide", {
-  perPage: 1,
-  rewind: true,
-});
+// var splide = new Splide(".splide", {
+//   perPage: 1,
+//   rewind: true,
+// });
 
-splide.mount();
+// splide.mount();
 
 const link1 = document.getElementById("link1");
 const link2 = document.getElementById("link2");

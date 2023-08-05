@@ -4,7 +4,7 @@
 
 .content-pnb {
   margin-top: 112px;
-  display: grid;
+  // display: grid;
   justify-content: center;
 }
 
@@ -31,7 +31,6 @@
   word-wrap: break-word;
 }
 
-
 .carrosel-pnb {
   display: flex;
   width: 100%;
@@ -40,7 +39,6 @@
   margin-bottom: 125px;
   margin-top: -15px;
 }
-
 
 .splide__pagination {
   display: none;
@@ -51,6 +49,8 @@
   background-color: #dddddd;
   border-radius: 8px;
   padding: 32px 40px 15px 40px;
+
+  height: 240px;
 }
 
 .box-img {
@@ -109,6 +109,9 @@
 
 .box-notes {
   display: flex;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: -52px;
   gap: 10px;
 }
 
@@ -194,141 +197,141 @@ p {
   z-index: 2;
 }
 
-ul {
-  list-style: none;
-  perspective: 900;
-  padding: 0 20px 10px;
-  margin: 0;
-  border-radius: 5px;
-}
+// ul {
+//   list-style: none;
+//   perspective: 900;
+//   padding: 0 20px 10px;
+//   margin: 0;
+//   border-radius: 5px;
+// }
 
-ul li {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  padding-bottom: 4px;
-  padding-top: 18px;
-  border-bottom: 1px solid #838384;
-}
+// ul li {
+//   position: relative;
+//   padding: 0;
+//   margin: 0;
+//   padding-bottom: 4px;
+//   padding-top: 18px;
+//   border-bottom: 1px solid #838384;
+// }
 
-ul li:hover {
-  transition: 0.7s;
-  padding-left: 40px;
-}
+// ul li:hover {
+//   transition: 0.7s;
+//   padding-left: 40px;
+// }
 
-ul li:hover::after {
-  transition: 1s;
-}
+// ul li:hover::after {
+//   transition: 1s;
+// }
 
-ul li:nth-child(1) {
-  border: none;
-}
-ul li:nth-of-type(1) {
-  border-bottom: 1px solid #838384;
-  animation-delay: 0.5s;
-}
-ul li:nth-of-type(2) {
-  animation-delay: 0.75s;
-}
-ul li:nth-of-type(3) {
-  animation-delay: 1s;
-}
-ul li:last-of-type {
-  padding-bottom: 0;
-}
+// ul li:nth-child(1) {
+//   border: none;
+// }
+// ul li:nth-of-type(1) {
+//   border-bottom: 1px solid #838384;
+//   animation-delay: 0.5s;
+// }
+// ul li:nth-of-type(2) {
+//   animation-delay: 0.75s;
+// }
+// ul li:nth-of-type(3) {
+//   animation-delay: 1s;
+// }
+// ul li:last-of-type {
+//   padding-bottom: 0;
+// }
 
-ul li .arrow {
-  position: absolute;
-  transform: translate(-6px, 0);
-  margin-top: 16px;
-  right: 0;
-}
-ul li .fas {
-  color: #000000;
-  font-size: 15px;
-  margin-right: 10px;
-}
-ul li .arrow:before,
-ul li .arrow:after {
-  content: "";
-  position: absolute;
-  background-color: #000000;
-  width: 3px;
-  height: 9px;
-}
-ul li .arrow:before {
-  transform: translate(-2px, 0) rotate(45deg);
-}
-ul li .arrow:after {
-  transform: translate(2px, 0) rotate(-45deg);
-}
-ul li input[type="checkbox"] {
-  position: absolute;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0;
-}
-ul li input[type="checkbox"]:checked ~ p {
-  margin-top: 0;
-  max-height: 0;
-  opacity: 0;
-  transform: translate(0, 50%);
-}
-ul li input[type="checkbox"]:checked ~ .arrow:before {
-  transform: translate(2px, 0) rotate(45deg);
-}
-ul li input[type="checkbox"]:checked ~ .arrow:after {
-  transform: translate(-2px, 0) rotate(-45deg);
-}
-.transition,
-p,
-ul li .arrow:before,
-ul li .arrow:after {
-  transition: all 0.25s ease-in-out;
-}
+// ul li .arrow {
+//   position: absolute;
+//   transform: translate(-6px, 0);
+//   margin-top: 16px;
+//   right: 0;
+// }
+// ul li .fas {
+//   color: #000000;
+//   font-size: 15px;
+//   margin-right: 10px;
+// }
+// ul li .arrow:before,
+// ul li .arrow:after {
+//   content: "";
+//   position: absolute;
+//   background-color: #000000;
+//   width: 3px;
+//   height: 9px;
+// }
+// ul li .arrow:before {
+//   transform: translate(-2px, 0) rotate(45deg);
+// }
+// ul li .arrow:after {
+//   transform: translate(2px, 0) rotate(-45deg);
+// }
+// ul li input[type="checkbox"] {
+//   position: absolute;
+//   cursor: pointer;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 1;
+//   opacity: 0;
+// }
+// ul li input[type="checkbox"]:checked ~ p {
+//   margin-top: 0;
+//   max-height: 0;
+//   opacity: 0;
+//   transform: translate(0, 50%);
+// }
+// ul li input[type="checkbox"]:checked ~ .arrow:before {
+//   transform: translate(2px, 0) rotate(45deg);
+// }
+// ul li input[type="checkbox"]:checked ~ .arrow:after {
+//   transform: translate(-2px, 0) rotate(-45deg);
+// }
+// .transition,
+// p,
+// ul li .arrow:before,
+// ul li .arrow:after {
+//   transition: all 0.25s ease-in-out;
+// }
 
-.flipIn,
-h1,
-ul li {
-  animation: flipdown 0.5s ease both;
-}
-.no-select,
-h2 {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  user-select: none;
-}
+// .flipIn,
+// h1,
+// ul li {
+//   animation: flipdown 0.5s ease both;
+// }
+// .no-select,
+// h2 {
+//   -webkit-tap-highlight-color: transparent;
+//   -webkit-touch-callout: none;
+//   user-select: none;
+// }
 
-@keyframes flipdown {
-  0% {
-    opacity: 0;
-    transform-origin: top center;
-    transform: rotateX(-90deg);
-  }
+// @keyframes flipdown {
+//   0% {
+//     opacity: 0;
+//     transform-origin: top center;
+//     transform: rotateX(-90deg);
+//   }
 
-  5% {
-    opacity: 1;
-  }
+//   5% {
+//     opacity: 1;
+//   }
 
-  80% {
-    transform: rotateX(8deg);
-  }
+//   80% {
+//     transform: rotateX(8deg);
+//   }
 
-  83% {
-    transform: rotateX(6deg);
-  }
+//   83% {
+//     transform: rotateX(6deg);
+//   }
 
-  92% {
-    transform: rotateX(-3deg);
-  }
+//   92% {
+//     transform: rotateX(-3deg);
+//   }
 
-  100% {
-    transform-origin: top center;
-    transform: rotateX(0deg);
-  }
-}
+//   100% {
+//     transform-origin: top center;
+//     transform: rotateX(0deg);
+//   }
+// }
 
 .parceiros-duvida {
   display: grid;
@@ -364,4 +367,48 @@ h2 {
   gap: 16px;
   margin-top: -200px;
   margin-bottom: 200px;
+}
+
+@media (max-width: 992px) {
+  .swiper-pagination {
+    margin-bottom: -10px;
+  }
+
+  .parceiros-none {
+    border: 1px solid red;
+    display: none;
+  }
+
+  .card-parceiros {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+  }
+}
+
+@media (max-width: 740px) {
+  .card-parceiros {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media (max-width: 566px) {
+  .card-carrosel-pnb {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .wrapper-aval {
+    height: 100%;
+  }
+
+  .swiper-pagination-aval {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .card-parceiros {
+    grid-template-columns: auto auto;
+  }
 }

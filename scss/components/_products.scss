@@ -107,7 +107,8 @@
 }
 
 .gap-title {
-  margin-left: 40px;
+  // margin-left: 40px;
+  margin-left: 23px;
 }
 
 .cards-produtos-title {
@@ -931,13 +932,94 @@ $blue: #03b5d2;
   display: none;
 }
 
-@media (max-width: 800px) {
+.cards-produtos-content-carrosel {
+  display: none;
+}
+
+.container-cursos-pnb-carrosel {
+  display: none;
+}
+
+.swiper-pagination-carrosel-h {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: 24px;
+}
+
+.swiper-pagination-bullet {
+  background-color: white;
+}
+
+.swiper-aval {
+  gap: 20px;
+  display: flex;
+}
+
+.mySwiper-avaliacao {
+  margin-top: 40px;
+}
+
+.wrapper-aval {
+  height: 300px;
+}
+
+@media (max-width: 1200px) {
+  .cards-produtos-content-carrosel {
+    display: block;
+  }
+
+  .last-card {
+    margin-top: 0;
+  }
+
   .cards-produto-content {
     display: none;
   }
 
+  .swiper-pagination-bullet {
+    background-color: white;
+  }
+}
+
+@media (max-width: 1025px) {
+  .container-cursos-pnb {
+    display: none;
+  }
+
+  .container-cursos-pnb-carrosel {
+    height: auto;
+    display: flex;
+  }
+
+  .swiper-cursos {
+    display: flex;
+    justify-content: center;
+  }
+
+  .swiper-wrapper-cursos {
+    height: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cards-produtos-title {
+    flex-direction: column;
+    align-items: start;
+
+    span {
+      margin-top: 16px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
   .cards-home {
     display: none;
+  }
+
+  .last-card {
+    margin: 0;
   }
 
   .cards-home-carrosel {
@@ -958,6 +1040,8 @@ $blue: #03b5d2;
   .content-carrosel {
     flex-direction: column;
     align-items: start;
+    width: 100%;
+    // border: 1px solid red;
 
     .content-text-carrosel {
       width: 100%;
@@ -969,8 +1053,37 @@ $blue: #03b5d2;
       padding: 0;
     }
   }
+
+  .swiper-content {
+    width: 426px;
+  }
+}
+
+@media (max-width: 767px) {
+  .swiper-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 445px) {
+  .swiper-content {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 347px) {
+  .produtos-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+
+    .gap-title {
+      margin-left: 0;
+    }
+  }
 }
 
 // * {
-//   border: 1px solid red;
+//
 // }
