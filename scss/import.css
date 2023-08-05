@@ -6575,6 +6575,7 @@ footer {
   max-height: 9em;
   transition: all 200ms linear;
   will-change: opacity, max-height;
+  overflow-y: scroll;
 }
 .accordion .accordion-content {
   opacity: 0;
