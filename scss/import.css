@@ -6526,6 +6526,7 @@ footer {
 }
 .accordion button .accordion-title {
   /* padding: 1em 1.5em 1em 0; */
+  padding-right: 40px;
   color: #0160a6;
   font-size: 24px;
   font-family: "PT Serif";
