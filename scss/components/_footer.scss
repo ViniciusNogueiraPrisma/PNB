@@ -15,26 +15,31 @@ footer {
 }
 
 .card-footer-content {
-  width: 100%;
-  height: 300px;
+  // width: 100%;
+  // height: 300px;
+
+  width: 476px;
+  height: 270px;
+
   display: grid;
   border-radius: 8px;
 
-  padding: 40px 24px 40px 24px;
+  padding: 30px 24px 30px 24px;
 }
 
 .one {
-  // background-image: url("../../images/new-images/Home/bg-footer-1.png");
+  background-image: url("../../images/new-images/Home/bg-footer-1.png");
   background-color: black;
 }
 
 .two {
-  // background-image: url("../../images/new-images/Home/tc-banner.png");
+  background-image: url("../../images/new-images/Home/tc-banner.png");
+  background-repeat: no-repeat;
   background-color: black;
 }
 
 .three {
-  // background-image: url("../../images/new-images/Home/bg-footer-3.png");
+  background-image: url("../../images/new-images/Home/bg-footer-3.png");
   background-color: black;
 }
 
@@ -45,7 +50,7 @@ footer {
   font-weight: 400;
   line-height: 25.6px;
   word-wrap: break-word;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .one h1 {
@@ -88,17 +93,18 @@ footer {
 
 .two p {
   // Aplicativo
-  color: #fafafa;
+  color: #000000;
   font-size: 16px;
   font-family: "Roboto";
   font-weight: 400;
   line-height: 25.6px;
   word-wrap: break-word;
+  // margin-bottom: 24px;
 }
 
 .two h1 {
   // Invista com a TC
-  color: #99ff00;
+  color: #000000;
   font-size: 28px;
   font-family: "PT Serif";
   font-weight: 700;
@@ -110,7 +116,7 @@ footer {
 
 .two h3 {
   // Já é cliente?
-  color: #eeeeee;
+  color: #000000;
   font-size: 16px;
   font-family: "Roboto";
   font-weight: 400;
@@ -119,17 +125,24 @@ footer {
 }
 
 .two a {
-  color: #eeeeee;
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  width: 85px;
+
+  padding-bottom: 7px;
 }
 
 .two span {
   // Baixei o aplicativo da TC:
-  color: #dddddd;
+  color: #000000;
   font-size: 12px;
   font-family: "Roboto";
   font-weight: 700;
   line-height: 15.84px;
   word-wrap: break-word;
+
+  margin-bottom: 24px;
 }
 
 .three p {
@@ -140,6 +153,7 @@ footer {
   font-weight: 400;
   line-height: 25.6px;
   word-wrap: break-word;
+  margin-bottom: 24px;
 }
 
 .three h1 {
@@ -151,7 +165,7 @@ footer {
   line-height: 36.96px;
   word-wrap: break-word;
 
-  margin-top: -25px;
+  margin-top: -19px;
 }
 
 .three span {
@@ -171,6 +185,11 @@ footer {
   font-weight: 400;
   line-height: 25.6px;
   word-wrap: break-word;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  width: 85px;
+
+  padding-bottom: 2px;
 }
 
 .three button {
@@ -193,8 +212,8 @@ footer {
 }
 
 .container-footer {
-  margin-left: 64px;
-  margin-right: 64px;
+  display: flex;
+  justify-content: center;
 }
 
 .content-footer {
@@ -203,6 +222,7 @@ footer {
   margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
+  gap: 70px;
 }
 
 .footer-icons {
@@ -211,7 +231,7 @@ footer {
 }
 
 // .logo-footer {
-//   border: 1px solid red;
+//
 // }
 
 .links-footer {
@@ -258,6 +278,10 @@ footer {
   word-wrap: break-word;
 }
 
+// * {
+//
+// }
+
 .first-span-footer {
   // Investment Banking
   color: #fafafa;
@@ -281,7 +305,7 @@ footer {
 }
 
 .news-footer {
-  border-left: 1px solid rgb(53, 62, 189);
+  border-left: 1px solid rgb(255, 255, 255);
   padding-left: 30px;
 }
 
@@ -348,6 +372,39 @@ footer {
   gap: 15px;
 }
 
+@media (max-width: 1500px) {
+  .content-image-footer {
+    display: none;
+  }
+
+  .content-image-footer-carrosel {
+    display: block;
+    margin-top: -120px;
+  }
+
+  .slide-footer {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .swiper-pagination-footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 24px;
+
+    .swiper-pagination-bullet {
+      color: white;
+      background: white;
+    }
+  }
+
+  .mySwiper-footer {
+    height: 303px;
+  }
+}
+
 @media (max-width: 1250px) {
   .logo-footer {
     display: none;
@@ -363,28 +420,12 @@ footer {
     height: 332px;
   }
 
-  .swiper-pagination-footer {
-    display: flex;
-    justify-content: center;
-    color: white;
-    margin-top: 24px;
-
-    .swiper-pagination-bullet {
-      color: white;
-      background: white;
-    }
-  }
-
-  .content-image-footer {
-    display: none;
-  }
-
-  .content-image-footer-carrosel {
-    margin-top: -120px;
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-  }
+  // .content-image-footer-carrosel {
+  //   margin-top: -120px;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   gap: 24px;
+  // }
 }
 
 @media (max-width: 647px) {
@@ -404,6 +445,14 @@ footer {
 
   .news-buttons {
     display: grid;
+  }
+}
+
+@media (max-width: 530px) {
+  .card-footer-content {
+    // width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 

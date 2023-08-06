@@ -57,6 +57,25 @@
   word-wrap: break-word;
 }
 
+.nav-texts a:hover::after {
+  width: 100%;
+}
+
+.nav-texts a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width .3s;
+}
+
+// .border-right-to-left:hover {
+//   background: linear-gradient(to left, transparent 70%, #000 70%);
+//   background-size: 100% 3px;
+//   background-repeat: no-repeat;
+// }
+
 .active-border {
   border-bottom: 1px solid rgb(0, 0, 0);
 }

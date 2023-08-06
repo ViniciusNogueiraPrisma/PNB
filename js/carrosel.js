@@ -91,10 +91,10 @@ window.addEventListener("resize", checkWindowSizeAval);
 var swiperFooter = new Swiper(".mySwiper-footer", {
   slidesPerView: 2,
   spaceBetween: 10,
-  autoplay: {
-    delay: 1500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 1500,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: ".swiper-pagination-footer",
     clickable: true,
@@ -102,7 +102,7 @@ var swiperFooter = new Swiper(".mySwiper-footer", {
 });
 
 function checkWindowSizeFooter() {
-  if (window.innerWidth <= 780) {
+  if (window.innerWidth <= 1000) {
     swiperFooter.params.slidesPerView = 1;
   } else {
     swiperFooter.params.slidesPerView = 2;
