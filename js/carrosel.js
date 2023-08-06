@@ -191,4 +191,23 @@ function showDiv(showElement, hideElement, showLink, hideLink) {
   hideLink.classList.remove("active-border");
 }
 
+$(document).ready(function () {
+  $("#voltar-ao-topo").click(function (event) {
+    event.preventDefault();
+
+    $("html, body").animate({ scrollTop: 0 }, 800);
+  });
+});
+
+// $(document).ready(function () {
+//   function animateImage() {
+//     $(".animate-img").animate({ top: "-130px" }, 200, function () {
+//       // Após subir, inverte a direção para descer
+//       $(".animate-img").animate({ top: "130px" }, 200, animateImage);
+//     });
+//   }
+
+//   animateImage();
+// });
+
 //////////

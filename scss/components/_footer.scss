@@ -222,6 +222,8 @@ footer {
   margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
   gap: 70px;
 }
 
@@ -264,6 +266,15 @@ footer {
 .sobre-footer {
   display: flex;
   gap: 52px;
+}
+
+.direitos-footer span {
+  color: #bbbbbb;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
 }
 
 .sobre-footer span a {
@@ -370,6 +381,26 @@ footer {
   align-items: center;
   display: flex;
   gap: 15px;
+}
+
+.prisma-footer {
+  border-top: 1px solid gray;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.content-footer-prisma {
+  width: 100%;
+  padding-left: 72px;
+  padding-right: 72px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.animate-img {
+  position: relative;
+  top: 0;
+  transition: top 1s ease;
 }
 
 @media (max-width: 1500px) {
