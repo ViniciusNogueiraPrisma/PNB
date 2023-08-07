@@ -538,6 +538,11 @@ footer {
     margin-left: 107px;
   }
 
+  .prisma-footer {
+    padding-left: 117px;
+    padding-right: 117px;
+  }
+
   // * {
   //   border: 1px solid red;
   // }
@@ -644,9 +649,9 @@ footer {
   }
 }
 
-@media (max-width: 450px) {
-  .container-footer {
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-}
+// @media (max-width: 450px) {
+//   .container-footer {
+//     margin-left: 25px;
+//     margin-right: 25px;
+//   }
+// }
