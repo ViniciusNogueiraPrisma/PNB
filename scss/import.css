@@ -4302,6 +4302,8 @@ footer {
   }
   .mySwiper-footer {
     height: 303px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }
 @media (max-width: 1250px) {
@@ -5921,6 +5923,10 @@ footer {
   font-weight: 400;
   line-height: 25.6px;
   word-wrap: break-word;
+}
+
+.slide-footer {
+  margin: 0 0 auto 0;
 }
 
 .content-text-carrosel button {

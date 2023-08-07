@@ -89,21 +89,50 @@ checkWindowSizeAval();
 window.addEventListener("resize", checkWindowSizeAval);
 
 var swiperFooter = new Swiper(".mySwiper-footer", {
-  slidesPerView: 1,
-  spaceBetween: 0,
-  freeMode: true,
-  // autoplay: {
-  //   delay: 1500,
-  //   disableOnInteraction: false,
+  slidesPerView: 2,
+  centeredSlides: true,
+  roundLengths: true,
+  spaceBetween: -200,
+  loopedSlides: 3,
+  // loop: true,
+  // effect: 'flip',
+  // flipEffect: {
+  //   slideShadows: false,
   // },
+
+  // effect: 'coverflow',
+  // coverflowEffect: {
+  //   rotate: 30,
+  //   slideShadows: false,
+  // },
+
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination-footer",
     clickable: true,
   },
 });
 
+function checkWindowSizeFooter() {
+  if (window.innerWidth <= 1270) {
+    swiperFooter.params.slidesPerView = 1;
+    swiperFooter.params.spaceBetween = 0;
+  } else {
+    swiperFooter.params.slidesPerView = 2;
+    swiperFooter.params.spaceBetween = 15;
+  }
+
+  swiperFooter.update();
+}
+
+checkWindowSizeFooter();
+window.addEventListener("resize", checkWindowSizeFooter);
+
 // function checkWindowSizeFooter() {
-//   if (window.innerWidth <= 1000) {
+//   if (window.innerWidth <= 1270) {
 //     swiperFooter.params.slidesPerView = 1;
 //   } else {
 //     swiperFooter.params.slidesPerView = 2;
