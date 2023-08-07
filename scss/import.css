@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Base */
 @import url("https://fonts.googleapis.com/css?family=Niramit:300,300i,700");
 @font-face {
@@ -4057,6 +4058,10 @@ footer {
   margin-bottom: 24px;
 }
 
+#list {
+  display: none;
+}
+
 .three p {
   color: #999999;
   font-size: 16px;
@@ -4097,6 +4102,12 @@ footer {
   border-bottom: 1px solid white;
   width: 85px;
   padding-bottom: 2px;
+}
+
+#wrapper {
+  background: #ccc;
+  overflow: hidden;
+  transition: height 200ms;
 }
 
 .three button {
@@ -4163,7 +4174,7 @@ footer {
 
 .sobre-footer {
   display: flex;
-  gap: 35px;
+  gap: 20px;
 }
 
 .direitos-footer span {
@@ -4273,6 +4284,20 @@ footer {
   gap: 15px;
 }
 
+.accordion-footer-div {
+  border: 1px solid red;
+  display: none;
+  background: #ccc;
+  overflow: hidden;
+  transition: height 200ms;
+}
+
+.accordion-footer-div.active-footer {
+  display: block;
+  max-height: 500px; /* Defina um valor maior que a altura do conteúdo */
+  transition: max-height 0.3s ease;
+}
+
 .prisma-footer {
   border-top: 1px solid gray;
 }
@@ -4337,6 +4362,9 @@ footer {
   }
 }
 @media (max-width: 1250px) {
+  #list {
+    display: block;
+  }
   .termos-last {
     display: block;
     margin-top: 24px;

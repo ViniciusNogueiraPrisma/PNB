@@ -119,6 +119,39 @@ window.addEventListener(
   }, 200)
 );
 
+// document.addEventListener("DOMContentLoaded", function () {
+//   const accordionLink = document.getElementById("accordion-link");
+//   const accordionContent = document.getElementById("accordion-footer-div");
+
+//   accordionLink.addEventListener("click", function (event) {
+//     event.preventDefault();
+
+//     // Toggle class "active-footer" para expandir ou contrair o conteúdo do accordion
+//     accordionContent.classList.toggle("active-footer");
+//   });
+// });
+
+$(function () {
+  var b = $("#button");
+  var w = $("#wrapper");
+  var l = $("#list");
+
+  w.height(l.outerHeight(true));
+
+  b.click(function (event) {
+    event.preventDefault(); // Impede a ação padrão do link
+
+    if (w.hasClass("open")) {
+      w.removeClass("open");
+      w.height(0);
+    } else {
+      w.addClass("open");
+      w.height(l.outerHeight(true));
+    }
+  });
+});
+
+
 const image = document.getElementById("rotate-image");
 
 let isAlternate = false;

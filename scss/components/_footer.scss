@@ -145,6 +145,14 @@ footer {
   margin-bottom: 24px;
 }
 
+#list {
+  display: none;
+}
+
+// #wrapper-footer {
+//   display: none;
+// }
+
 .three p {
   // Canal Youtube
   color: #999999;
@@ -190,6 +198,12 @@ footer {
   width: 85px;
 
   padding-bottom: 2px;
+}
+
+#wrapper {
+  background: #ccc;
+  overflow: hidden;
+  transition: height 200ms;
 }
 
 .three button {
@@ -267,7 +281,7 @@ footer {
 
 .sobre-footer {
   display: flex;
-  gap: 35px;
+  gap: 20px;
 }
 
 .direitos-footer span {
@@ -393,6 +407,20 @@ footer {
   gap: 15px;
 }
 
+.accordion-footer-div {
+  border: 1px solid red;
+  display: none;
+  background: #ccc;
+  overflow: hidden;
+  transition: height 200ms;
+}
+
+.accordion-footer-div.active-footer {
+  display: block;
+  max-height: 500px; /* Defina um valor maior que a altura do conteúdo */
+  transition: max-height 0.3s ease;
+}
+
 .prisma-footer {
   border-top: 1px solid gray;
   // margin-left: 150px;
@@ -472,6 +500,11 @@ footer {
 }
 
 @media (max-width: 1250px) {
+  
+  #list {
+    display: block;
+  }
+
   .termos-last {
     display: block;
     margin-top: 24px;
