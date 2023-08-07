@@ -65,6 +65,10 @@
   max-width: 1226px;
 }
 
+.searchbox .input-group .form-control::placeholder {
+  color: #002e5f;
+}
+
 .nav-texts a::after {
   content: '';
   display: block;

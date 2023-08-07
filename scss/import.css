@@ -4104,6 +4104,10 @@ footer {
   padding-bottom: 2px;
 }
 
+#search-btn {
+  border: none;
+}
+
 #wrapper {
   background: #ccc;
   overflow: hidden;
@@ -5858,6 +5862,10 @@ footer {
 
 .container {
   max-width: 1226px;
+}
+
+.searchbox .input-group .form-control::placeholder {
+  color: #002e5f;
 }
 
 .nav-texts a::after {
