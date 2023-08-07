@@ -222,8 +222,8 @@ footer {
   margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
-  padding-left: 40px;
-  padding-right: 40px;
+  // padding-left: 40px;
+  // padding-right: 40px;
   gap: 30px;
 
   // width: 100%;
@@ -361,7 +361,7 @@ footer {
 }
 
 .news-footer input {
-  width: 364px;
+  width: 100%;
   padding: 10px 16px 10px 16px;
   border-radius: 4px;
   border: none;
@@ -395,8 +395,8 @@ footer {
 
 .prisma-footer {
   border-top: 1px solid gray;
-  margin-left: 150px;
-  margin-right: 150px;
+  // margin-left: 150px;
+  // margin-right: 150px;
 }
 
 .content-footer-prisma {
@@ -432,6 +432,10 @@ footer {
   display: none;
 }
 
+// * {
+//   border: 1px solid red;
+// }
+
 @media (max-width: 1500px) {
   .content-image-footer {
     display: none;
@@ -464,6 +468,7 @@ footer {
     height: 303px;
   }
 }
+
 
 @media (max-width: 1250px) {
   .termos-last {

@@ -4096,8 +4096,6 @@ footer {
   margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
-  padding-left: 40px;
-  padding-right: 40px;
   gap: 30px;
 }
 
@@ -4217,7 +4215,7 @@ footer {
 }
 
 .news-footer input {
-  width: 364px;
+  width: 100%;
   padding: 10px 16px 10px 16px;
   border-radius: 4px;
   border: none;
@@ -4247,8 +4245,6 @@ footer {
 
 .prisma-footer {
   border-top: 1px solid gray;
-  margin-left: 150px;
-  margin-right: 150px;
 }
 
 .content-footer-prisma {
@@ -5797,6 +5793,10 @@ footer {
 
 .nav-texts a:hover::after {
   width: 100%;
+}
+
+.container {
+  max-width: 1363px;
 }
 
 .nav-texts a::after {
