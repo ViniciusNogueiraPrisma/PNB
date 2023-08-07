@@ -200,6 +200,10 @@ footer {
   padding-bottom: 2px;
 }
 
+#search-btn {
+  border: none;
+}
+
 #wrapper {
   background: #ccc;
   overflow: hidden;
@@ -502,7 +506,6 @@ footer {
 }
 
 @media (max-width: 1250px) {
-  
   #list {
     display: block;
   }
