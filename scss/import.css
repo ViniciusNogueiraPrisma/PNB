@@ -5957,6 +5957,10 @@ footer {
   word-wrap: break-word;
 }
 
+.swiper-hover-div img {
+  width: 100%;
+}
+
 .slide-footer {
   margin: 0 0 auto 0;
 }
@@ -6969,9 +6973,6 @@ footer {
     margin-top: 24px;
     width: 100%;
     padding: 0;
-  }
-  .swiper-content {
-    width: 426px;
   }
 }
 @media (max-width: 767px) {
