@@ -1331,6 +1331,34 @@ nav {
   text-decoration: underline;
 }
 
+.search-talk-mobile {
+  display: flex;
+  width: 100%;
+}
+
+#btn-mobile-talk {
+  border: 1px solid #002e5f;
+  padding: 10px 24px 10px 24px;
+  border-radius: 4px;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+}
+#btn-mobile-talk span {
+  color: #002e5f;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 25.6px;
+  word-wrap: break-word;
+}
+#btn-mobile-talk img {
+  width: 20px;
+}
+
 .toggle-mobile-menu {
   border: none;
   position: relative;
@@ -1475,12 +1503,6 @@ nav {
   .toggle-mobile-menu {
     display: block;
     color: black;
-  }
-  .toggle-mobile-menu ::after {
-    border: 1px solid black;
-  }
-  .toggle-mobile-menu ::before {
-    border: 1px solid black;
   }
   .toggle-mobile-menu span {
     background: black;
@@ -2425,8 +2447,8 @@ body.open-menu::after {
 }
 @media (max-width: 575px) {
   .mobile-menu-div .menu-body {
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 48px;
+    padding-left: 48x;
   }
 }
 .mobile-menu-div .container {
@@ -2486,7 +2508,7 @@ body.open-menu::after {
   justify-content: space-between;
   padding-right: 48px;
   padding-left: 48px;
-  background-color: var(--primary-01-var-2);
+  background-color: #002e5f;
   padding-top: 18px;
   padding-bottom: 18px;
   flex-wrap: wrap;
@@ -2509,7 +2531,7 @@ body.open-menu::after {
   flex: 1;
 }
 .mobile-menu .header-menu .logo-header .branding img {
-  max-width: 70px;
+  max-width: 100%;
 }
 .mobile-menu .header-menu .iframe-mobile.iframe-cotacoes {
   height: 22px;
@@ -2556,15 +2578,8 @@ body.open-menu::after {
 .mobile-menu .middle-header {
   display: block;
 }
-@media (max-width: 575px) {
-  .mobile-menu .middle-header {
-    padding-right: 24px;
-    padding-left: 24px;
-  }
-}
 .mobile-menu .middle-header .menu-tools {
   display: block;
-  background-color: var(--grey-scale-01);
   padding-right: 48px;
   padding-left: 48px;
   padding-top: 16px;
@@ -2574,9 +2589,8 @@ body.open-menu::after {
   display: flex;
   gap: 8px;
   padding: 12px 8px;
-  border: none;
+  border: 1px solid rgb(224, 224, 224);
   border-radius: 6px;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.16);
   background-color: var(--pure-white);
 }
 .mobile-menu .middle-header .menu-tools .div-pesquisar-mobile button {
@@ -2806,6 +2820,7 @@ body.open-menu::after {
   border: none;
   text-decoration: none;
   padding-bottom: 0;
+  width: 100%;
   /*
   &.link-externo{
   	display: flex;
@@ -2829,22 +2844,23 @@ body.open-menu::after {
 .mobile-menu .nav-mobile .accordion-item .accordion-button {
   padding: 0px;
   position: relative;
-  color: var(--text-grey-scale-08);
   border-radius: 0;
   background: transparent;
-  gap: 10px;
-  font-size: rem(22);
-  font-weight: 400;
-  line-height: 150%;
+  color: #333333;
+  font-size: 20px;
+  font-family: "PT Serif";
+  font-weight: 0;
+  line-height: 28px;
+  word-wrap: break-word;
 }
 .mobile-menu .nav-mobile .accordion-item .accordion-button::after {
   content: none;
 }
 .mobile-menu .nav-mobile .accordion-item .accordion-button:not(.collapsed) {
   background: none;
-  border-bottom: none;
+  border-bottom: 1px solid black;
   box-shadow: none;
-  color: var(--text-primary-01-default);
+  color: #01518c;
 }
 .mobile-menu .nav-mobile .accordion-item .accordion-button:not(.collapsed)::before {
   transform: rotate(180deg);
@@ -2855,13 +2871,11 @@ body.open-menu::after {
   border-bottom: none;
 }
 .mobile-menu .nav-mobile .accordion-item .accordion-body .pages {
-  padding-left: 24px;
   margin: 0;
-  background-color: transparent;
+  background-color: #002e5f;
 }
 .mobile-menu .nav-mobile .accordion-item .accordion-body .pages li {
   list-style: none;
-  margin-bottom: 8px;
   /*
   &.link-externo{
   	a{
@@ -2880,8 +2894,9 @@ body.open-menu::after {
   text-decoration: none;
   font-size: rem(16);
   font-weight: 400;
-  color: var(--text-grey-scale-08);
-  padding: 0px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: white;
   display: block;
 }
 .mobile-menu .menu-footer {
