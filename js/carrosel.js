@@ -25,6 +25,7 @@ checkWindowSize();
 window.addEventListener("resize", checkWindowSize);
 
 var swiper = new Swiper(".mySwiper-carrosel-h", {
+  spaceBetween: 20,
   autoplay: {
     delay: 1500,
     disableOnInteraction: false,
@@ -119,7 +120,7 @@ var swiperFooter = new Swiper(".mySwiper-footer", {
 function checkWindowSizeFooter() {
   if (window.innerWidth <= 1270) {
     swiperFooter.params.slidesPerView = 1;
-    swiperFooter.params.spaceBetween = 0;
+    swiperFooter.params.spaceBetween = 20;
   } else {
     swiperFooter.params.slidesPerView = 2;
     swiperFooter.params.spaceBetween = 15;

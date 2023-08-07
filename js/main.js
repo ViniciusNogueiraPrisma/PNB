@@ -1,3 +1,41 @@
+// function alterarBackground() {
+//   var meuElemento = document.getElementById(".header-bg");
+
+//   if (window.innerWidth <= 1000) {
+//     meuElemento.style.backgroundImage =
+//       "url('caminho/para/o/novo-background.jpg')";
+//   } else {
+//     meuElemento.style.backgroundImage = "url('https://t4.ftcdn.net/jpg/05/71/83/47/360_F_571834789_ujYbUnH190iUokdDhZq7GXeTBRgqYVwa.jpg')";
+//   }
+// }
+
+// // Chama a função quando a página é carregada
+// document.addEventListener("DOMContentLoaded", alterarBackground);
+
+// // Chama a função quando a janela é redimensionada
+// window.addEventListener("resize", alterarBackground);
+
+function alterarBackground() {
+  var bgTrade = document.getElementById("header-bg");
+
+  if (bgTrade) {
+    // Verifica se o elemento foi encontrado
+    if (window.innerWidth <= 1150) {
+      bgTrade.style.backgroundImage =
+        "url('../../images/new-images/Home/bg-home-filter.png')";
+    } else {
+      bgTrade.style.backgroundImage =
+        "url('../../images/new-images/Home/banner_home_04.jpg')";
+    }
+  }
+}
+
+// Chama a função quando a página é carregada
+document.addEventListener("DOMContentLoaded", alterarBackground);
+
+// Chama a função quando a janela é redimensionada
+window.addEventListener("resize", alterarBackground);
+
 function debounce(callback, delay) {
   let timer;
   return (...args) => {
@@ -552,3 +590,5 @@ produto4.addEventListener("click", (event) => {
   hideDivProdutos([divProduto1, divProduto2, divProduto3]);
   setActiveLink(produto4);
 });
+
+// Função para atualizar o background do elemento

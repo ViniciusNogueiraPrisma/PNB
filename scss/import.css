@@ -766,7 +766,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 95px;
-  padding-bottom: 10px;
   padding-left: 72px;
   padding-right: 72px;
   margin-top: 5px;
@@ -822,6 +821,16 @@ nav {
 .content-logo img {
   width: 120px;
   margin-top: 5px;
+}
+
+.toggle-mobile-menu span {
+  height: 2px;
+  width: 21px;
+  display: block;
+  color: black;
+  transition: 0.5s ease;
+  position: relative;
+  border-radius: 2px;
 }
 
 .header {
@@ -1337,7 +1346,7 @@ nav {
 }
 .toggle-mobile-menu span {
   height: 2px;
-  width: 21px;
+  width: 27px;
   display: block;
   background: var(--text-white);
   transition: 0.5s ease;
@@ -1347,12 +1356,12 @@ nav {
 .toggle-mobile-menu span::after, .toggle-mobile-menu span::before {
   content: "";
   display: block;
-  height: 2px;
-  width: 21px;
+  height: 3px;
+  width: 27px;
   border-radius: 2px;
   display: block;
   position: absolute;
-  background: var(--text-white);
+  background: black;
   transition: 0.5s ease;
 }
 .toggle-mobile-menu span::before {
@@ -1473,6 +1482,10 @@ nav {
   .toggle-mobile-menu ::before {
     border: 1px solid black;
   }
+  .toggle-mobile-menu span {
+    background: black;
+    height: 3px;
+  }
   .container-texts {
     max-width: 100%;
     padding: 0;
@@ -1489,6 +1502,8 @@ nav {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 @media (max-width: 999px) {

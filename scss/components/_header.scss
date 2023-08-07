@@ -178,7 +178,7 @@ nav {
   align-items: center;
   height: 95px;
   // padding-top: 10px;
-  padding-bottom: 10px;
+  // padding-bottom: 10px;
   padding-left: 72px;
   padding-right: 72px;
   margin-top: 5px;
@@ -235,6 +235,17 @@ nav {
 .content-logo img {
   width: 120px;
   margin-top: 5px;
+}
+
+.toggle-mobile-menu span {
+  height: 2px;
+  width: 21px;
+  display: block;
+  // background: black;
+  color: black;
+  transition: 0.5s ease;
+  position: relative;
+  border-radius: 2px;
 }
 
 .header {
@@ -842,7 +853,7 @@ nav {
 
   span {
     height: 2px;
-    width: 21px;
+    width: 27px;
     display: block;
     background: var(--text-white);
     transition: 0.5s ease;
@@ -853,12 +864,12 @@ nav {
     &::before {
       content: "";
       display: block;
-      height: 2px;
-      width: 21px;
+      height: 3px;
+      width: 27px;
       border-radius: 2px;
       display: block;
       position: absolute;
-      background: var(--text-white);
+      background: black;
       transition: 0.5s ease;
     }
 
@@ -1020,6 +1031,11 @@ nav {
     ::before {
       border: 1px solid black;
     }
+
+    span {
+      background: black;
+      height: 3px;
+    }
   }
 
   .container-texts {
@@ -1043,6 +1059,8 @@ nav {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
@@ -1089,24 +1107,24 @@ nav {
 
   .header-txts {
     position: absolute;
-    margin-top: 64px
+    margin-top: 64px;
   }
 
-  .content-numbers p  {
-   font-size: 13px;
-  }
-
-  .content-numbers span  {
-    font-size: 19px;
-   }
-
-   .content-numbers small  {
+  .content-numbers p {
     font-size: 13px;
-   }
+  }
 
-   .content-logo p {
+  .content-numbers span {
+    font-size: 19px;
+  }
+
+  .content-numbers small {
+    font-size: 13px;
+  }
+
+  .content-logo p {
     font-size: 11px;
-   }
+  }
 
   .header-txts h1 {
     // Conteúdo de valor para melhorar
