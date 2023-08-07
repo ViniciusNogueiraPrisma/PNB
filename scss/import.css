@@ -4372,6 +4372,7 @@ footer {
   }
   .abrir-mapa-footer a img {
     width: 20px;
+    transition: opacity 0.3s ease;
   }
   .direitos-last span {
     color: #bbbbbb;

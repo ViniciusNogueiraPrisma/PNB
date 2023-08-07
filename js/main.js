@@ -119,6 +119,30 @@ window.addEventListener(
   }, 200)
 );
 
+const image = document.getElementById("rotate-image");
+
+let isAlternate = false;
+const originalUrl = image.src;
+const alternateUrl = "./images/new-images/icons/minus.svg"; // Substitua pela URL da imagem alternativa
+
+image.addEventListener("click", function (event) {
+  event.preventDefault();
+
+  // Aplica a transição de fade
+  image.style.opacity = "0";
+
+  // Aguarda um curto período antes de trocar a URL e restaurar a opacidade
+  setTimeout(function () {
+    if (isAlternate) {
+      image.src = originalUrl;
+    } else {
+      image.src = alternateUrl;
+    }
+    image.style.opacity = "1";
+    isAlternate = !isAlternate;
+  }, 300); // Ajuste o valor do timeout conforme a duração desejada da transição
+});
+
 // Tooltip
 
 var tooltipTriggerList = [].slice.call(

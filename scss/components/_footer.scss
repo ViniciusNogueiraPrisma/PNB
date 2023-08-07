@@ -496,7 +496,6 @@ footer {
     margin-bottom: -27px;
   }
 
-
   .abrir-mapa-footer a {
     display: flex;
     align-items: center;
@@ -512,6 +511,7 @@ footer {
 
     img {
       width: 20px;
+      transition: opacity 0.3s ease;
     }
   }
 
