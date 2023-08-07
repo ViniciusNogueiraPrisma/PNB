@@ -4098,7 +4098,7 @@ footer {
   justify-content: space-between;
   padding-left: 40px;
   padding-right: 40px;
-  gap: 70px;
+  gap: 30px;
 }
 
 .footer-icons {
@@ -4116,7 +4116,7 @@ footer {
 
 .links-footer span {
   color: #fafafa;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Roboto";
   font-weight: 400;
   line-height: 25.6px;
@@ -4135,7 +4135,7 @@ footer {
 
 .sobre-footer {
   display: flex;
-  gap: 52px;
+  gap: 35px;
 }
 
 .direitos-footer span {
@@ -4229,7 +4229,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 10px 16px 10px 16px;
+  padding: 10px 30px 10px 16px;
   border-radius: 4px;
   background: #fff;
   border: none;
@@ -4249,16 +4249,32 @@ footer {
 
 .content-footer-prisma {
   width: 100%;
-  padding-left: 72px;
-  padding-right: 72px;
   margin-top: 20px;
   margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .animate-img {
   position: relative;
   top: 0;
   transition: top 1s ease;
+}
+
+.content-footer-last {
+  display: none;
+}
+
+.main-footer-map {
+  display: none;
+}
+
+.footer-icons-map {
+  display: none;
+}
+
+.termos-last {
+  display: none;
 }
 
 @media (max-width: 1500px) {
@@ -4289,11 +4305,74 @@ footer {
   }
 }
 @media (max-width: 1250px) {
+  .termos-last {
+    display: block;
+    margin-top: 24px;
+    margin-bottom: -14px;
+  }
+  .termos-last a {
+    text-decoration: none;
+    color: #bbbbbb;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 25.6px;
+    word-wrap: break-word;
+    margin-right: 20px;
+  }
+  .main-footer-map {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -27px;
+  }
+  .abrir-mapa-footer a {
+    color: #bbbbbb;
+    font-size: 14px;
+    font-family: "Roboto";
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 22.4px;
+    word-wrap: break-word;
+  }
+  .direitos-last span {
+    color: #bbbbbb;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 25.6px;
+    word-wrap: break-word;
+  }
+  .footer-icons-map {
+    display: block;
+  }
+  .footer-icons {
+    margin: auto;
+  }
   .logo-footer {
     display: none;
   }
   .sobre-footer {
     display: none;
+  }
+  .content-footer {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    margin-right: 107px;
+    margin-left: 107px;
+  }
+  .content-footer-prisma .direitos-footer {
+    display: none;
+  }
+  .news-footer {
+    padding: 0;
+    border: none;
+    width: 100%;
+  }
+  .news-footer input {
+    width: 100%;
   }
 }
 @media (max-width: 1200px) {
@@ -4305,16 +4384,48 @@ footer {
   .news-footer input {
     width: 100%;
   }
+  .content-footer {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
   .news-footer button {
     justify-content: center;
   }
   .news-footer {
     border-left: none;
-    padding-left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-top: -48px;
   }
   .news-buttons {
     display: grid;
+  }
+  .main-footer-map {
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 40px;
+  }
+  .termos-last {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .footer-icons-map {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 802px) {
+  .content-footer-prisma {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
   }
 }
 @media (max-width: 530px) {
@@ -6996,6 +7107,10 @@ footer {
   font-weight: 400;
   line-height: 25.6px;
   word-wrap: break-word;
+}
+#voltar-ao-topo img {
+  width: 20px;
+  height: 15px;
 }
 
 .duvida-title span {
