@@ -4436,12 +4436,6 @@ footer {
     gap: 20px;
   }
 }
-@media (max-width: 530px) {
-  .card-footer-content {
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-}
 .table {
   margin: 0;
 }
