@@ -111,7 +111,7 @@
   display: flex;
   position: absolute;
   margin-left: 100px;
-  margin-top: -52px;
+  margin-top: -38px;
   gap: 10px;
 }
 
@@ -404,6 +404,21 @@ p {
   .card-carrosel-pnb {
     height: 100%;
     flex-direction: column;
+  }
+
+  .box-text {
+    width: 100%;
+    margin-top: 20px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .box-notes {
+    margin-top: -38px;
+  }
+
+  .card-carrosel-pnb {
+    padding: 30px;
   }
 
   .wrapper-aval {

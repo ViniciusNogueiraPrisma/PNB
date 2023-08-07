@@ -342,6 +342,14 @@ footer {
   margin-bottom: 30px;
 }
 
+// * {
+//   border: 1px solid red;
+// }
+
+.a-termos-gap {
+  margin-left: 20px;
+}
+
 .news-footer span {
   // E-mail:
   color: #999999;
@@ -471,7 +479,7 @@ footer {
       font-weight: 400;
       line-height: 25.6px;
       word-wrap: break-word;
-      margin-right: 20px;
+      // margin-right: 20px;
     }
   }
 
@@ -569,6 +577,14 @@ footer {
     padding-left: 0;
     padding-right: 0;
   }
+
+  .a-termos-gap {
+    margin: 0;
+  }
+
+  // * {
+  //   border: 1px solid red;
+  // }
 
   .news-footer button {
     justify-content: center;

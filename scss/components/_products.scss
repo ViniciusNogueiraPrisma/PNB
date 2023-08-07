@@ -575,6 +575,10 @@
   box-sizing: border-box;
 }
 
+.accordion button[aria-expanded=true] + .accordion-content {
+  overflow-y: scroll;
+}
+
 // colors
 $primary: #002e5f;
 $secondary: #4f537b;
