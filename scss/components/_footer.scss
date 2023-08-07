@@ -397,7 +397,7 @@ footer {
   align-items: center;
   gap: 12px;
 
-  padding: 10px 30px 10px 16px;
+  padding: 10px 16px 10px 16px;
   border-radius: 4px;
   background: #fff;
   border: none;
@@ -528,7 +528,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: -27px;
+    margin-bottom: -10px;
   }
 
   .abrir-mapa-footer a {
@@ -667,7 +667,7 @@ footer {
     flex-direction: column;
     gap: 10px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .footer-icons-map {

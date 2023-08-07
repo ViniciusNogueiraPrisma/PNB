@@ -7,8 +7,27 @@
   border-radius: 0;
   margin: 0;
   padding: 0;
-  padding-left: 222px;
-  padding-right: 222px;
+}
+
+.nav-texts-menu a {
+  text-decoration: none;
+  color: #1d1d1d;
+  font-size: 16px;
+  font-family: "PT Serif" serif;
+  font-weight: 400;
+  line-height: 22.4px;
+  margin: 10px;
+}
+
+.nav-qs-menu {
+  margin: auto;
+  max-width: 1400px;
+}
+
+.items-menu-qs {
+  display: flex;
+  align-items: center;
+  gap: 80px;
 }
 
 .header-acessibilidade {
@@ -60,11 +79,19 @@
   padding: 0;
 }
 
+.img-banner-qs {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .img-banner-qs img {
   width: 100%;
+  height: auto;
   height: 65.0154798762vh;
-  background-size: cover;
   filter: brightness(40%);
+  width: 100%;
+  object-fit: cover;
 }
 
 .infos-banner-qs {
@@ -453,6 +480,24 @@
   background-color: #eeeeee;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+@media (max-width: 1075px) {
+  .items-menu-qs {
+    display: none;
+  }
+  .nav-logo-qs-menu {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .infos-banner-qs {
+    margin-top: -47.998962vh;
+  }
+  .infos-content-banner-qs {
+    flex-direction: column;
+    gap: 50px;
+  }
 }
 
 /*# sourceMappingURL=header-quem-somos.css.map */

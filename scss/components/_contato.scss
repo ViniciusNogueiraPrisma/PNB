@@ -36,6 +36,7 @@
 
   .infos-contato {
     width: 50%;
+    height: 100%;
     border-radius: 4px;
     background-color: #002e5f;
 
@@ -80,6 +81,7 @@
       font-weight: 700;
       line-height: 25.6px;
       word-wrap: break-word;
+      margin-bottom: -4px;
     }
 
     .margin-p-contato {
@@ -93,6 +95,7 @@
   flex-direction: column;
   border: none;
   margin-bottom: 16px;
+  padding: 0;
 }
 
 .form-control label {
@@ -165,9 +168,42 @@
   position: relative;
 }
 
+.content-contato {
+  background-color: #eeeeee;
+  margin-bottom: -60px;
+  z-index: 1;
+}
+
 .form-control #togglePassword,
 .form-control #togglePassword2 {
   visibility: visible;
+}
+
+.btns-form {
+  margin-top: 40px;
+}
+
+#limpar {
+  padding: 10px 24px 10px 24px;
+  color: black;
+  font-size: 16px;
+  font-size: "Roboto";
+  font-weight: 400;
+  border: 1px solid rgb(177, 177, 177);
+  border-radius: 4px;
+  background-color: #cccccc;
+}
+
+#entrar-contato {
+  padding: 10px 24px 10px 24px;
+  border-radius: 4px;
+  border: none;
+  background-color: #002e5f;
+  color: white;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  margin-left: 24px;
 }
 
 input[type="checkbox"],
@@ -192,6 +228,7 @@ input[type="radio"] {
   border: 1px solid var(--bc, var(--border));
   background: var(--b, var(--background));
   transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+
   &:after {
     content: "";
     display: block;
@@ -201,6 +238,7 @@ input[type="radio"] {
     transition: transform var(--d-t, 0.3s) var(--d-t-e, ease),
       opacity var(--d-o, 0.2s);
   }
+
   &:checked {
     --b: var(--active);
     --bc: var(--active);
@@ -208,18 +246,22 @@ input[type="radio"] {
     --d-t: 0.6s;
     --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
   }
+
   &:disabled {
     --b: var(--disabled);
     cursor: not-allowed;
     opacity: 0.9;
+
     &:checked {
       --b: var(--disabled-inner);
       --bc: var(--border);
     }
+
     & + label {
       cursor: not-allowed;
     }
   }
+
   &:hover {
     &:not(:checked) {
       &:not(:disabled) {
@@ -227,18 +269,23 @@ input[type="radio"] {
       }
     }
   }
+
   &:focus {
     box-shadow: 0 0 0 var(--focus);
   }
+
   &:not(.switch) {
     width: 21px;
+
     &:after {
       opacity: var(--o, 0);
     }
+
     &:checked {
       --o: 1;
     }
   }
+
   & + label {
     font-size: 14px;
     line-height: 21px;
@@ -248,9 +295,11 @@ input[type="radio"] {
     margin-left: 4px;
   }
 }
+
 input[type="checkbox"] {
   &:not(.switch) {
     border-radius: 7px;
+
     &:after {
       width: 5px;
       height: 9px;
@@ -261,13 +310,16 @@ input[type="checkbox"] {
       top: 4px;
       transform: rotate(var(--r, 20deg));
     }
+
     &:checked {
       --r: 43deg;
     }
   }
+
   &.switch {
     width: 38px;
     border-radius: 11px;
+
     &:after {
       left: 2px;
       top: 2px;
@@ -277,10 +329,12 @@ input[type="checkbox"] {
       background: var(--ab, var(--border));
       transform: translateX(var(--x, 0));
     }
+
     &:checked {
       --ab: var(--active-inner);
       --x: 17px;
     }
+
     &:disabled {
       &:not(:checked) {
         &:after {
@@ -296,5 +350,112 @@ input[type="checkbox"] {
 }
 
 .recaptcha {
-    margin-top: 24px;
+  margin-top: 24px;
+}
+
+.infos-contato-last {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .cards-contato {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btns-form {
+    display: flex;
+    justify-content: center;
+  }
+
+  #limpar {
+    width: 50%;
+  }
+
+  #entrar-contato {
+    width: 50%;
+  }
+
+  .infos-contato {
+    display: none;
+  }
+
+  .infos-contato-last {
+    display: block;
+    background-color: #002e5f;
+    padding: 40px 72px 40px 72px;
+
+    span {
+      color: #eeeeee;
+      font-size: 16px;
+      font-family: "Roboto";
+      font-weight: 400;
+      line-height: 25.6px;
+      word-wrap: break-word;
+      display: block;
+      width: 100%;
+    }
+
+    p {
+      color: #eeeeee;
+      font-size: 16px;
+      font-family: "Roboto";
+      font-weight: 400;
+      line-height: 25.6px;
+      word-wrap: break-word;
+    }
+
+    h5 {
+      color: #eeeeee;
+      font-size: 16px;
+      font-family: "Roboto";
+      font-weight: 400;
+      line-height: 25.6px;
+      word-wrap: break-word;
+      margin-top: -6px;
+    }
+
+    h2 {
+      color: #eeeeee;
+      font-size: 16px;
+      font-family: "Roboto";
+      font-weight: 700;
+      line-height: 25.6px;
+      word-wrap: break-word;
+    }
+  }
+
+  .cards-contato .inputs-contato {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  // * {
+  //   border: 1px solid red;
+  // }
+}
+
+@media (max-width: 440px) {
+  .btns-form {
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #limpar {
+    width: 82vw;
+  }
+
+  #entrar-contato {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .content-contato {
+    margin-bottom: -20px;
+    padding-left: 44px;
+    padding-right: 44px;
+  }
 }
