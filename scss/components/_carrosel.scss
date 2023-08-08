@@ -53,10 +53,13 @@
 
 .swiper-hover-div img {
   width: 100%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .slide-footer {
   margin: 0 0 auto 0;
+  width: auto !important;
 }
 
 .content-text-carrosel button {
@@ -72,6 +75,8 @@
   line-height: 25.6px;
   word-wrap: break-word;
   transition: 0.5s ease;
+
+  margin-top: 40px;
 }
 
 .content-text-carrosel button:hover {
@@ -86,5 +91,11 @@
 @media (max-width: 800px) {
   .texts-home button {
     width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .slide-footer {
+    width: 100% !important;
   }
 }

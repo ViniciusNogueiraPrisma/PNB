@@ -322,15 +322,21 @@ footer {
 }
 
 .sobre-pnb-footer {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .nossos-pnb {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .invest-pnb {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .news-footer {
@@ -405,7 +411,6 @@ footer {
 #img-cadastro {
   padding-right: 5px;
 }
-
 
 .news-buttons {
   align-items: center;
@@ -507,7 +512,6 @@ footer {
 }
 
 @media (max-width: 1250px) {
-  
   #list {
     display: block;
   }
@@ -613,18 +617,20 @@ footer {
   }
 }
 
-@media (max-width: 1200px) {
-  .wrapper-footer {
-    height: 332px;
-  }
+// @media (max-width: 1200px) {
+//   .wrapper-footer {
+//     height: 332px;
+//     display: flex;
+//     justify-content: center;
+//   }
 
-  // .content-image-footer-carrosel {
-  //   margin-top: -120px;
-  //   display: flex;
-  //   justify-content: space-between;
-  //   gap: 24px;
-  // }
-}
+//   // .content-image-footer-carrosel {
+//   //   margin-top: -120px;
+//   //   display: flex;
+//   //   justify-content: space-between;
+//   //   gap: 24px;
+//   // }
+// }
 
 @media (max-width: 647px) {
   .news-footer input {

@@ -691,6 +691,7 @@ nav {
   font-weight: 700;
   line-height: 25.6px;
   word-wrap: break-word;
+  margin-bottom: 40px;
 }
 
 .header-txts h1 {
@@ -853,7 +854,7 @@ nav {
 
 .header {
   transition: 0.2s;
-  height: 1000px;
+  height: 928px;
   background-image: url("../../images/new-images/Home/banner_home_04.jpg");
   padding: 16px 0 0;
   background-color: rgb(220, 220, 220);
@@ -4229,15 +4230,21 @@ footer {
 }
 
 .sobre-pnb-footer {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .nossos-pnb {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .invest-pnb {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .news-footer {
@@ -4471,11 +4478,6 @@ footer {
   }
   .news-footer input {
     width: 100%;
-  }
-}
-@media (max-width: 1200px) {
-  .wrapper-footer {
-    height: 332px;
   }
 }
 @media (max-width: 647px) {
@@ -5943,7 +5945,7 @@ footer {
 .card-content {
   border-radius: 4px;
   padding: 40px 32px 32px 40px;
-  background: #fff;
+  background: #FAFAFA;
 }
 
 .card-content img {
@@ -6032,10 +6034,13 @@ footer {
 
 .swiper-hover-div img {
   width: 100%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .slide-footer {
   margin: 0 0 auto 0;
+  width: auto !important;
 }
 
 .content-text-carrosel button {
@@ -6050,6 +6055,7 @@ footer {
   line-height: 25.6px;
   word-wrap: break-word;
   transition: 0.5s ease;
+  margin-top: 40px;
 }
 
 .content-text-carrosel button:hover {
@@ -6064,6 +6070,11 @@ footer {
 @media (max-width: 800px) {
   .texts-home button {
     width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .slide-footer {
+    width: 100% !important;
   }
 }
 .swiper-content {
@@ -6656,10 +6667,6 @@ footer {
   box-sizing: border-box;
 }
 
-.accordion button[aria-expanded=true] + .accordion-content {
-  overflow-y: scroll;
-}
-
 .timeline {
   position: relative;
   padding-left: 4rem;
@@ -6884,21 +6891,26 @@ footer {
 }
 .accordion button[aria-expanded=true] + .accordion-content {
   opacity: 1;
-  max-height: 9em;
+  max-height: 15em;
   transition: all 200ms linear;
   will-change: opacity, max-height;
 }
 .accordion .accordion-content {
   opacity: 0;
   max-height: 0;
-  overflow: hidden;
   transition: opacity 200ms linear, max-height 200ms linear;
   will-change: opacity, max-height;
+  background-color: white;
+  padding: 16px 32px 16px 32px;
 }
 .accordion .accordion-content p {
-  font-size: 1rem;
-  font-weight: 300;
-  margin: 2em 0;
+  margin-bottom: 0;
+  color: #333333;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  line-height: 25.6px;
+  word-wrap: break-word;
 }
 
 .container-faq-ns {
@@ -6970,8 +6982,7 @@ footer {
 }
 
 .swiper-aval {
-  gap: 20px;
-  display: flex;
+  width: auto !important;
 }
 
 .mySwiper-avaliacao {
@@ -7078,6 +7089,38 @@ footer {
     margin-left: 0;
   }
 }
+@media (max-width: 1140px) {
+  .container-produtos {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+@media (max-width: 600px) {
+  .container-produtos {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .container-carrosel {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .container-infos {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .header-txts {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .content-main {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 .sobre-pnb {
   background-color: #eeeeee;
 }
@@ -7128,6 +7171,7 @@ footer {
   background-color: #dddddd;
   border-radius: 8px;
   padding: 32px 40px 15px 40px;
+  width: 526px;
   height: 240px;
 }
 
@@ -7339,6 +7383,7 @@ p {
 @media (max-width: 566px) {
   .card-carrosel-pnb {
     height: 100%;
+    width: 329px;
     flex-direction: column;
   }
   .box-text {
@@ -7349,9 +7394,6 @@ p {
   }
   .box-notes {
     margin-top: -38px;
-  }
-  .card-carrosel-pnb {
-    padding: 30px;
   }
   .wrapper-aval {
     height: 100%;

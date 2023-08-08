@@ -49,7 +49,7 @@
   background-color: #dddddd;
   border-radius: 8px;
   padding: 32px 40px 15px 40px;
-
+  width: 526px;
   height: 240px;
 }
 
@@ -403,6 +403,7 @@ p {
 @media (max-width: 566px) {
   .card-carrosel-pnb {
     height: 100%;
+    width: 329px;
     flex-direction: column;
   }
 
@@ -417,9 +418,6 @@ p {
     margin-top: -38px;
   }
 
-  .card-carrosel-pnb {
-    padding: 30px;
-  }
 
   .wrapper-aval {
     height: 100%;
