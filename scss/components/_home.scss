@@ -74,7 +74,7 @@
 }
 
 .container {
-  max-width: 1226px;
+  max-width: 1400px;
 }
 
 // .nav-texts-menu {
@@ -126,6 +126,12 @@
   font-weight: 700;
   line-height: 25.6px;
   word-wrap: break-word;
+  transition: 0.5s ease;
+}
+
+.texts-home button:hover {
+  background-color: #999999;
+  transition: 0.5s ease;
 }
 
 .cards-home {

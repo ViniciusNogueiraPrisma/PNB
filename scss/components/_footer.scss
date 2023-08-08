@@ -242,7 +242,7 @@ footer {
   // padding-right: 40px;
   gap: 30px;
 
-  // width: 100%;
+  width: 100%;
 }
 
 .footer-icons {
@@ -250,9 +250,9 @@ footer {
   gap: 12px;
 }
 
-// .logo-footer {
-//
-// }
+.logo-footer {
+  width: 32%;
+}
 
 .links-footer {
   margin-top: 100px;
@@ -283,7 +283,7 @@ footer {
 
 .sobre-footer {
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 
 .direitos-footer span {
@@ -396,12 +396,16 @@ footer {
   display: flex;
   align-items: center;
   gap: 12px;
-
   padding: 10px 16px 10px 16px;
   border-radius: 4px;
   background: #fff;
   border: none;
 }
+
+#img-cadastro {
+  padding-right: 5px;
+}
+
 
 .news-buttons {
   align-items: center;
@@ -425,6 +429,7 @@ footer {
 
 .prisma-footer {
   border-top: 1px solid gray;
+  padding-right: 38px;
   // margin-left: 150px;
   // margin-right: 150px;
 }

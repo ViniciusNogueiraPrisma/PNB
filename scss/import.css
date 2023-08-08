@@ -646,6 +646,12 @@ nav {
   align-items: center;
   gap: 10px;
   padding: 16px;
+  transition: 0.5s ease;
+}
+
+.nav-search-talk button:hover {
+  transition: 0.5s ease;
+  background-color: #ebe9e9;
 }
 
 .border-text {
@@ -713,6 +719,12 @@ nav {
   border-radius: 4px;
   background: #002e5f;
   border: none;
+  transition: 0.5s ease;
+}
+
+#info:hover {
+  background: #0e427a;
+  transition: 0.5s ease;
 }
 
 #info span {
@@ -731,7 +743,13 @@ nav {
   padding-left: 24px;
   border-radius: 4px;
   border: 1px solid #002e5f;
+  transition: 0.5s ease;
   gap: 15px;
+}
+
+#view:hover {
+  background-color: #e0e0e0;
+  transition: 0.5s ease;
 }
 
 .btn-view {
@@ -4137,11 +4155,16 @@ footer {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+  width: 100%;
 }
 
 .footer-icons {
   display: flex;
   gap: 12px;
+}
+
+.logo-footer {
+  width: 32%;
 }
 
 .links-footer {
@@ -4173,7 +4196,7 @@ footer {
 
 .sobre-footer {
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 
 .direitos-footer span {
@@ -4277,6 +4300,10 @@ footer {
   border: none;
 }
 
+#img-cadastro {
+  padding-right: 5px;
+}
+
 .news-buttons {
   align-items: center;
   display: flex;
@@ -4299,6 +4326,7 @@ footer {
 
 .prisma-footer {
   border-top: 1px solid gray;
+  padding-right: 38px;
 }
 
 .content-footer-prisma {
@@ -5867,7 +5895,7 @@ footer {
 }
 
 .container {
-  max-width: 1226px;
+  max-width: 1400px;
 }
 
 .nav-texts a::after {
@@ -5898,6 +5926,12 @@ footer {
   font-weight: 700;
   line-height: 25.6px;
   word-wrap: break-word;
+  transition: 0.5s ease;
+}
+
+.texts-home button:hover {
+  background-color: #999999;
+  transition: 0.5s ease;
 }
 
 .cards-home {
@@ -6015,6 +6049,12 @@ footer {
   font-weight: 400;
   line-height: 25.6px;
   word-wrap: break-word;
+  transition: 0.5s ease;
+}
+
+.content-text-carrosel button:hover {
+  background: #0e427a;
+  transition: 0.5s ease;
 }
 
 .content-carrosel-eng {
