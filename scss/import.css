@@ -619,7 +619,7 @@ nav {
 
 .nav-logo {
   width: 30%;
-  margin-right: 80px;
+  margin-right: 40px;
 }
 
 .nav-search-talk {
@@ -1610,6 +1610,14 @@ nav {
     font-weight: 400;
     line-height: 39.6px;
     word-wrap: break-word;
+  }
+}
+@media (max-width: 1496px) {
+  .nav-search-talk {
+    gap: 30px;
+  }
+  .nav-logo {
+    margin: 0;
   }
 }
 .accordion {
@@ -4318,7 +4326,6 @@ footer {
 }
 
 .accordion-footer-div {
-  border: 1px solid red;
   display: none;
   background: #ccc;
   overflow: hidden;
@@ -4417,7 +4424,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: -10px;
+    margin-bottom: -35px;
   }
   .abrir-mapa-footer a {
     display: flex;
@@ -5838,6 +5845,11 @@ footer {
 
 #btn-search {
   border: none;
+  background: none;
+}
+
+#btn-search:hover {
+  background-color: none;
 }
 
 .searchbox .input-group .form-control::placeholder {
@@ -5846,6 +5858,12 @@ footer {
 
 .searchbox .input-group .form-control {
   color: #000;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .texts-home {
@@ -5945,7 +5963,7 @@ footer {
 .card-content {
   border-radius: 4px;
   padding: 40px 32px 32px 40px;
-  background: #FAFAFA;
+  background: #fafafa;
 }
 
 .card-content img {
@@ -7896,6 +7914,9 @@ p {
     display: none;
   }
   .nav-logo-qs-menu {
+    display: none;
+  }
+  .header-acessibilidade {
     display: none;
   }
 }

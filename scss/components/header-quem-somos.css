@@ -489,6 +489,9 @@
   .nav-logo-qs-menu {
     display: none;
   }
+  .header-acessibilidade {
+    display: none;
+  }
 }
 @media (max-width: 600px) {
   .infos-banner-qs {

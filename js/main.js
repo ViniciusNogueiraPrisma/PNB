@@ -131,26 +131,69 @@ window.addEventListener(
 //   });
 // });
 
-$(function () {
-  var b = $("#button");
-  var w = $("#wrapper");
-  var l = $("#list");
+// $(function () {
+//   var b = $("#button");
+//   var w = $("#wrapper");
+//   var l = $("#list");
 
-  w.height(l.outerHeight(true));
+//   b.click(function (event) {
+//     event.preventDefault(); // Impede a ação padrão do link
 
-  b.click(function (event) {
-    event.preventDefault(); // Impede a ação padrão do link
+//     if (w.hasClass("open")) {
+//       w.removeClass("open");
+//       w.height(0);
+//     } else {
+//       w.addClass("open");
+//       w.height(l.outerHeight(true));
+//     }
+//   });
+// });
 
-    if (w.hasClass("open")) {
-      w.removeClass("open");
-      w.height(0);
-    } else {
-      w.addClass("open");
-      w.height(l.outerHeight(true));
+function fadeInScroll() {
+  const fadeElems = document.querySelectorAll(".fade-in");
+
+  fadeElems.forEach((elem) => {
+    if (isElementInViewport(elem)) {
+      elem.style.opacity = "1";
+      elem.style.transform = "translateY(0)";
     }
   });
-});
+}
 
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+window.addEventListener("scroll", fadeInScroll);
+window.addEventListener("load", fadeInScroll);
+
+$(document).ready(function () {
+  $(".mapa-site-button").click(function (event) {
+    event.preventDefault(); // Impede a ação padrão do link
+
+    var content = $(this).closest(".mapa-site").find(".mapa-site-content");
+    var expanded = $(this).attr("aria-expanded");
+
+    if (expanded === "false") {
+      content.slideDown();
+      $(this).attr("aria-expanded", "true");
+      $("#rotate-image").addClass("rotated"); // Adicionar classe para girar a imagem
+    } else {
+      content.slideUp();
+      $(this).attr("aria-expanded", "false");
+      $("#rotate-image").removeClass("rotated"); // Remover classe para reverter a rotação da imagem
+    }
+  });
+
+  $(".mapa-site-content").hide(); // Oculta o conteúdo do mapa do site inicialmente
+});
 
 const image = document.getElementById("rotate-image");
 
