@@ -5860,6 +5860,18 @@ footer {
   color: #000;
 }
 
+.swiper-content {
+  transition: 0.5s ease;
+}
+
+.swiper-hover-div:hover .swiper-content {
+  transition: 0.5s ease;
+  padding: 40px;
+}
+.swiper-hover-div:hover .swiper-content p {
+  color: black;
+}
+
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -7134,9 +7146,9 @@ footer {
     padding-left: 40px;
     padding-right: 40px;
   }
-  .container {
-    padding-left: 40px;
-    padding-right: 40px;
+  .container-texts {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .sobre-pnb {

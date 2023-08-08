@@ -29,6 +29,23 @@
   color: #000;
 }
 
+// .swiper-hover-div {
+//   transition: 0.5s ease;
+// }
+
+.swiper-content {
+  transition: 0.5s ease;
+}
+
+.swiper-hover-div:hover .swiper-content{
+  transition: 0.5s ease;
+  padding: 40px;
+
+  p  {
+    color: black;
+  }
+}
+
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
