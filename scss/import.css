@@ -5864,6 +5864,10 @@ footer {
   transition: 0.5s ease;
 }
 
+.swiper-hover-div:hover #img-swiper-slide {
+  border: 1px solid red;
+}
+
 .swiper-hover-div:hover .swiper-content {
   transition: 0.5s ease;
   padding: 40px;
@@ -6066,6 +6070,7 @@ footer {
   width: 100%;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  object-fit: cover;
 }
 
 .slide-footer {
